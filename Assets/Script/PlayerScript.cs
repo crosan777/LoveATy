@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +18,7 @@ public class PlayerScript : MonoBehaviour
 
     void ChangeBodyPartSprite(int partIndex, int spriteIndex)
     {
-        if (spriteIndex < bodyParts[partIndex].sprites.Length - 1)
+        if(spriteIndex < bodyParts[partIndex].sprites.Length - 1)
         {
             spriteIndex = 0;
         }
@@ -31,8 +30,6 @@ public class PlayerScript : MonoBehaviour
         transform.localScale = new Vector3(newScale, newScale, 0);
     }
 
-    
- 
+
+   
 }
-
-

@@ -36,6 +36,12 @@ public class ColorControllerScript : MonoBehaviour
         "#AF6E51", "#652A0E", "#c68642", "#634933",  "#5A3825",
         "#8d5524", "#3D2314", "#23120B" , "#656d43", "#6B676F"
     };
+    private String[] HexShirtColors =
+        { "#fbe7a1", "#f1c27d", "#CAA667", "#d9b380", "#CC9966",
+        "#AF6E51", "#652A0E", "#c68642", "#634933",  "#5A3825",
+        "#8d5524", "#3D2314", "#23120B" , "#656d43", "#6B676F"
+    };
+
 
     private String[] HexDefaultColors =
        { "#1b85b8", "#1c222e", "#2e4045", "#41533b", "#312528",
@@ -121,9 +127,14 @@ public class ColorControllerScript : MonoBehaviour
         return HexSkinColors;
     }
 
+    public String[] GetHexShirtColors()
+    {
+        return HexShirtColors;
+    }
 
     public String[] GetHexDefaultColors()
     {
         return HexDefaultColors;
     }
+
 }
