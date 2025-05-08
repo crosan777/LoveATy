@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Turtleneck_0: -8301142213359652186
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

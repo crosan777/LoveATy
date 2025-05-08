@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Striped Tee_0: -871503197488391743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
