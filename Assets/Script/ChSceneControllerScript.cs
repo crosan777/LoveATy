@@ -56,27 +56,10 @@ public class ChSceneControllerScript : MonoBehaviour
         partIndex = orgPartIndex;
     }
 
-    void RandomizePartColor(String partTag)
+    void RandomizePartColor(string partTag)
     {
-
-        String[] hexColors = colorScript.GetHexDefaultColors(); ;
-        switch (partTag)
-        {  
-            case "Skin":
-                hexColors = colorScript.GetHexSkinColors();
-                break;
-            case "Hair":
-                hexColors = colorScript.GetHexHairColors();
-                break;
-            case "Shirt":
-                hexColors = colorScript.GetHexShirtColors();
-                break;
-            default:
-                break;
-        }
-        String strColor = hexColors[UnityEngine.Random.Range(0, hexColors.Length)];
-        ColorUtility.TryParseHtmlString(strColor, out Color color);
-        ChangeCurrentPartColor(color);
+        UnityEngine.Color randomColor = new UnityEngine.Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
+        ChangeCurrentPartColor(randomColor);
     }
 
 
@@ -104,33 +87,14 @@ public class ChSceneControllerScript : MonoBehaviour
             partIndex = bodyPartNames.Length - 1;
         }
         bodyPartBtn.transform.GetChild(0).gameObject.GetComponent<Text>().text = bodyPartNames[partIndex];
-        CheckColorButtonOptions();
-    }
+            }
 
     void ChangeBodyPartClicked()
     {
         playerScript.bodyParts[partIndex].UpdateToNextSprite();
     }
 
-    void CheckColorButtonOptions()
-    {
-        if (playerScript.bodyParts[partIndex].CompareTag("Skin"))
-        {
-            colorScript.ChangeButtonColors(colorScript.GetHexSkinColors());
-        }
-        else if (playerScript.bodyParts[partIndex].CompareTag("Hair"))
-        {
-            colorScript.ChangeButtonColors(colorScript.GetHexHairColors());
-        }
-        else if (playerScript.bodyParts[partIndex].CompareTag("Shirt"))
-        {
-            colorScript.ChangeButtonColors(colorScript.GetHexShirtColors());
-        }
-        else
-        {
-            colorScript.ChangeButtonColors(colorScript.GetHexDefaultColors());
-        }
-    }
+ 
 
     private string[] GetPlayerBodyPartNames()
     {
@@ -148,18 +112,12 @@ public class ChSceneControllerScript : MonoBehaviour
     public void ChangeCurrentPartColor(Color32 newColor)
     {
         String partTag = playerScript.bodyParts[partIndex].tag;
-        if (partTag == "Skin" || partTag == "Leg" || partTag == "Foot" || partTag == "Sleeve")
+        GameObject[] allParts = GameObject.FindGameObjectsWithTag(partTag);
+        foreach (GameObject part in allParts)
         {
-            GameObject[] allParts = GameObject.FindGameObjectsWithTag(partTag);
-            foreach (GameObject part in allParts)
-            {
-                part.GetComponent<BodyPartScript>().UpdateSpriteColor(newColor);
-            }
+           part.GetComponent<BodyPartScript>().UpdateSpriteColor(newColor);
         }
-        else
-        {
-            playerScript.bodyParts[partIndex].UpdateSpriteColor(newColor);
-        }
+        
     }
 
     
