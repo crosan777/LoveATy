@@ -313,10 +313,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cae605bcf2e7ad49a5ad8a45c317039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyPartTitle: FACE
   sprites:
-  - down: {fileID: 21300000, guid: 200556f86e233ff41a95b9134b29591f, type: 3}
-  - down: {fileID: 21300000, guid: 73b5113b00fe71e4cbd88c32c6905129, type: 3}
-  - down: {fileID: 21300000, guid: 79ef87277d4dd394fa613d0170ae4cef, type: 3}
+  - img: {fileID: 21300000, guid: 200556f86e233ff41a95b9134b29591f, type: 3}
+  - img: {fileID: 21300000, guid: 73b5113b00fe71e4cbd88c32c6905129, type: 3}
+  - img: {fileID: 21300000, guid: 79ef87277d4dd394fa613d0170ae4cef, type: 3}
+  - img: {fileID: 21300000, guid: 192439b9a356dea428ff23e0154e57e2, type: 3}
+  - img: {fileID: 21300000, guid: 28de21cf7a8c09d469a705e32a0768b6, type: 3}
+  - img: {fileID: 21300000, guid: e7367b27bbd10f845893d6fdcd313623, type: 3}
+  - img: {fileID: 21300000, guid: 2f7b5846acda9d34b80bd7ed43ed62b6, type: 3}
+  - img: {fileID: 21300000, guid: 78fc8edb89021eb49b9421b92c962427, type: 3}
+  - img: {fileID: 21300000, guid: 4afab67ad9030a847801f75b5731b93c, type: 3}
+  - img: {fileID: 21300000, guid: 6d3c0164459bf124aa989974284c3f6c, type: 3}
+  - img: {fileID: 21300000, guid: 86134b41d53a3124c9e86c482652e166, type: 3}
+  - img: {fileID: 21300000, guid: 02d36622946dfd942ad70d1de70bae68, type: 3}
+  - img: {fileID: 21300000, guid: 8e0940bf93bb5c449873742e95c8e602, type: 3}
+  - img: {fileID: 21300000, guid: 41f50ba926292af4e98c6b94b28fd62f, type: 3}
+  - img: {fileID: 21300000, guid: 0edd774997e3fbe44b0675e05c14bfc5, type: 3}
+  - img: {fileID: 21300000, guid: 4cd9b9c6f40f24644a1afd1e17a65464, type: 3}
+  - img: {fileID: 21300000, guid: cbdcfdddfe8b54249a5c3fd797432b24, type: 3}
+  - img: {fileID: 21300000, guid: 5f7079bcbdd7c2747afee4506d613a78, type: 3}
+  - img: {fileID: 21300000, guid: 680a9ec944d6fc848a02effc323bbbe1, type: 3}
+  - img: {fileID: 21300000, guid: df466f867677a1e449369cedab6ef4e2, type: 3}
+  - img: {fileID: 21300000, guid: 0ca1ae327a007fe42add8c38ee7b1384, type: 3}
+  - img: {fileID: 21300000, guid: 98f371e5b7b06a743b0a8e7ade4f1d79, type: 3}
+  - img: {fileID: 21300000, guid: b5d66f90bc22fa041b7d1bf071053eae, type: 3}
+  - img: {fileID: 21300000, guid: 8b3eecce1e5cdd946a8b2c1b3dcf22a4, type: 3}
+  - img: {fileID: 21300000, guid: 52e451400edee0a45b07e32d1797da88, type: 3}
 --- !u!212 &216611843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -449,6 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cae605bcf2e7ad49a5ad8a45c317039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyPartTitle: 
   sprites: []
 --- !u!212 &313156332
 SpriteRenderer:
@@ -1482,12 +1506,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cae605bcf2e7ad49a5ad8a45c317039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyPartTitle: FACIAL HAIR
   sprites:
-  - down: {fileID: -8813147960081842595, guid: 9d7d03f5fb5127e49a27898bd3cae791, type: 3}
-  - down: {fileID: 862288608502525391, guid: 5f58a85e0270aa14d8978eb03347e9d8, type: 3}
-  - down: {fileID: -3904150180653049033, guid: ddef204b36068bb45849bacf7abe40b7, type: 3}
-  - down: {fileID: -653017217246115149, guid: 5ca6e70910f03af4d95510fef7a93a99, type: 3}
-  - down: {fileID: -3462298574842187380, guid: 75c5b8d0a85b33b49a958f98ba95b3a9, type: 3}
+  - img: {fileID: -8813147960081842595, guid: 9d7d03f5fb5127e49a27898bd3cae791, type: 3}
+  - img: {fileID: 862288608502525391, guid: 5f58a85e0270aa14d8978eb03347e9d8, type: 3}
+  - img: {fileID: -3904150180653049033, guid: ddef204b36068bb45849bacf7abe40b7, type: 3}
+  - img: {fileID: -653017217246115149, guid: 5ca6e70910f03af4d95510fef7a93a99, type: 3}
+  - img: {fileID: -3462298574842187380, guid: 75c5b8d0a85b33b49a958f98ba95b3a9, type: 3}
+  - img: {fileID: -3462298574842187380, guid: 75c5b8d0a85b33b49a958f98ba95b3a9, type: 3}
+  - img: {fileID: 1799556429185032459, guid: 30351d0e2756aaa4389e736a737aa9d5, type: 3}
+  - img: {fileID: 4755019124154638456, guid: 4bc17a137fc408f4aa8b74e2a2be6930, type: 3}
 --- !u!224 &1493930673 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 866924982037572958, guid: 9305072417154ee4688da86b5e845d77, type: 3}
@@ -1849,12 +1877,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5701023294958487945, guid: 9305072417154ee4688da86b5e845d77, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 140.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5701023294958487945, guid: 9305072417154ee4688da86b5e845d77, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -50.544
+      objectReference: {fileID: 0}
+    - target: {fileID: 5701023294958487945, guid: 9305072417154ee4688da86b5e845d77, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 49
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5701023294958487945, guid: 9305072417154ee4688da86b5e845d77, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 19
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 6085944124309636089, guid: 9305072417154ee4688da86b5e845d77, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2287,35 +2323,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cae605bcf2e7ad49a5ad8a45c317039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyPartTitle: HAIR
   sprites:
-  - down: {fileID: 21300000, guid: 6a70092b99e9bf44f81a3e13343552e5, type: 3}
-  - down: {fileID: 21300000, guid: 1f2b25c56b2ffa54da3f704af6979124, type: 3}
-  - down: {fileID: 21300000, guid: 91bce8db7d98f9849ae64a14c9d84f7b, type: 3}
-  - down: {fileID: 21300000, guid: 5e5dbadc484b0e84091185fb9b132fa1, type: 3}
-  - down: {fileID: 21300000, guid: 641d7865c8583f440b57e1b36e3e19d3, type: 3}
-  - down: {fileID: 21300000, guid: 64f448d1502b25b468f0b9ceb7835192, type: 3}
-  - down: {fileID: 21300000, guid: 6fe54ec2cde00b7499b3a38bc1bc3da1, type: 3}
-  - down: {fileID: 21300000, guid: 88ecec2715e2b74489a954806462427e, type: 3}
-  - down: {fileID: 21300000, guid: 3db6b6cb7fdcb2644ab4497a39a17b27, type: 3}
-  - down: {fileID: 21300000, guid: 28d3d4c85cfc8aa43b5ac6f6f9e6ebbc, type: 3}
-  - down: {fileID: 21300000, guid: e3c2ff7410b39f5459503b6ea42dc626, type: 3}
-  - down: {fileID: 21300000, guid: 85550ff6639b14346819b8da99922d06, type: 3}
-  - down: {fileID: 21300000, guid: 8a16bfd637d22644090d412de4a150ac, type: 3}
-  - down: {fileID: 21300000, guid: de8f43ec4f28a8c45a6bca1034c16218, type: 3}
-  - down: {fileID: 21300000, guid: d8fa1fdd5cedc4d409af673f3fffc7d0, type: 3}
-  - down: {fileID: 21300000, guid: ad33abc91caac4a4c83d1340a106b1a5, type: 3}
-  - down: {fileID: 21300000, guid: 0b94728305d89654aaa1b47e983f2b7e, type: 3}
-  - down: {fileID: 21300000, guid: b9c11c8d192a3aa43b442510db99656a, type: 3}
-  - down: {fileID: 21300000, guid: 3c684490ab2ef2844b0f1a87284cc7ae, type: 3}
-  - down: {fileID: 21300000, guid: 04faaba14d9ff7d4e89d677343a15cd1, type: 3}
-  - down: {fileID: 21300000, guid: c676499685ce0b44a8524f59aecba9ee, type: 3}
-  - down: {fileID: 21300000, guid: ee1667ed567fc534998a6dbefe116c14, type: 3}
-  - down: {fileID: 21300000, guid: fccc715140f143a4e8d50196df3a5f94, type: 3}
-  - down: {fileID: 21300000, guid: 66aa91f4022bc03449922804b4e152f4, type: 3}
-  - down: {fileID: 21300000, guid: 69e29e2fff249ad4c867cb5132d67006, type: 3}
-  - down: {fileID: 21300000, guid: 25248c564c8039544b6f0425f135120e, type: 3}
-  - down: {fileID: 21300000, guid: e9e46c2b14f490b409504d29b6642eaa, type: 3}
-  - down: {fileID: 21300000, guid: 28945678a55ac4e46871512eba2fff6f, type: 3}
+  - img: {fileID: 21300000, guid: 6a70092b99e9bf44f81a3e13343552e5, type: 3}
+  - img: {fileID: 21300000, guid: 1f2b25c56b2ffa54da3f704af6979124, type: 3}
+  - img: {fileID: 21300000, guid: 91bce8db7d98f9849ae64a14c9d84f7b, type: 3}
+  - img: {fileID: 21300000, guid: 5e5dbadc484b0e84091185fb9b132fa1, type: 3}
+  - img: {fileID: 21300000, guid: 641d7865c8583f440b57e1b36e3e19d3, type: 3}
+  - img: {fileID: 21300000, guid: 64f448d1502b25b468f0b9ceb7835192, type: 3}
+  - img: {fileID: 21300000, guid: 6fe54ec2cde00b7499b3a38bc1bc3da1, type: 3}
+  - img: {fileID: 21300000, guid: 88ecec2715e2b74489a954806462427e, type: 3}
+  - img: {fileID: 21300000, guid: 3db6b6cb7fdcb2644ab4497a39a17b27, type: 3}
+  - img: {fileID: 21300000, guid: 28d3d4c85cfc8aa43b5ac6f6f9e6ebbc, type: 3}
+  - img: {fileID: 21300000, guid: e3c2ff7410b39f5459503b6ea42dc626, type: 3}
+  - img: {fileID: 21300000, guid: 85550ff6639b14346819b8da99922d06, type: 3}
+  - img: {fileID: 21300000, guid: 8a16bfd637d22644090d412de4a150ac, type: 3}
+  - img: {fileID: 21300000, guid: de8f43ec4f28a8c45a6bca1034c16218, type: 3}
+  - img: {fileID: 21300000, guid: d8fa1fdd5cedc4d409af673f3fffc7d0, type: 3}
+  - img: {fileID: 21300000, guid: ad33abc91caac4a4c83d1340a106b1a5, type: 3}
+  - img: {fileID: 21300000, guid: 0b94728305d89654aaa1b47e983f2b7e, type: 3}
+  - img: {fileID: 21300000, guid: b9c11c8d192a3aa43b442510db99656a, type: 3}
+  - img: {fileID: 21300000, guid: 3c684490ab2ef2844b0f1a87284cc7ae, type: 3}
+  - img: {fileID: 21300000, guid: 04faaba14d9ff7d4e89d677343a15cd1, type: 3}
+  - img: {fileID: 21300000, guid: c676499685ce0b44a8524f59aecba9ee, type: 3}
+  - img: {fileID: 21300000, guid: ee1667ed567fc534998a6dbefe116c14, type: 3}
+  - img: {fileID: 21300000, guid: fccc715140f143a4e8d50196df3a5f94, type: 3}
+  - img: {fileID: 21300000, guid: 66aa91f4022bc03449922804b4e152f4, type: 3}
+  - img: {fileID: 21300000, guid: 69e29e2fff249ad4c867cb5132d67006, type: 3}
+  - img: {fileID: 21300000, guid: 25248c564c8039544b6f0425f135120e, type: 3}
+  - img: {fileID: 21300000, guid: e9e46c2b14f490b409504d29b6642eaa, type: 3}
+  - img: {fileID: 21300000, guid: 28945678a55ac4e46871512eba2fff6f, type: 3}
 --- !u!212 &1673809984
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2659,11 +2696,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cae605bcf2e7ad49a5ad8a45c317039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyPartTitle: ACCESORY
   sprites:
-  - down: {fileID: 5855080233286747867, guid: 0e647140d1d3e7745853f1b1df203912, type: 3}
-  - down: {fileID: -4820748380490303341, guid: a8e21d03eabbfb243a876c45d5a91286, type: 3}
-  - down: {fileID: 9217498575569213311, guid: 6c3f9b96fe66e27429ddfe5c19e5094d, type: 3}
-  - down: {fileID: 5457380331384864022, guid: d2d822a5be314b94b85f49b29939058a, type: 3}
+  - img: {fileID: 5855080233286747867, guid: 0e647140d1d3e7745853f1b1df203912, type: 3}
+  - img: {fileID: -4820748380490303341, guid: a8e21d03eabbfb243a876c45d5a91286, type: 3}
+  - img: {fileID: 9217498575569213311, guid: 6c3f9b96fe66e27429ddfe5c19e5094d, type: 3}
+  - img: {fileID: 5457380331384864022, guid: d2d822a5be314b94b85f49b29939058a, type: 3}
+  - img: {fileID: 3619683722074907577, guid: d8b54656d1d843b4bae369bab906f796, type: 3}
+  - img: {fileID: 5652923236303158652, guid: 459a633de09d3b348a4fb25ebb123e51, type: 3}
+  - img: {fileID: -5124495672996019571, guid: 297f489227b04eb4092194292789783b, type: 3}
+  - img: {fileID: -6925948404144973496, guid: 987a84758c6831d4a87ad627b342634d, type: 3}
+  - img: {fileID: -2474875876146295072, guid: 3b061bc41b99bd941ba62b6223bb27af, type: 3}
 --- !u!212 &2091977019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2834,11 +2877,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cae605bcf2e7ad49a5ad8a45c317039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bodyPartTitle: CLOTHES
   sprites:
-  - down: {fileID: 6730817929395519831, guid: d79f7c9813819334da0052f7b1c53257, type: 3}
-  - down: {fileID: -7378396247315863920, guid: 5018ab51d8d5375438dee091533efc6f, type: 3}
-  - down: {fileID: 1590750627849223398, guid: d6884068e3cb5f348a7628015cd51d73, type: 3}
-  - down: {fileID: -2022169436498817301, guid: 436bc408f48ac204088b720bdc533fd0, type: 3}
+  - img: {fileID: 6730817929395519831, guid: d79f7c9813819334da0052f7b1c53257, type: 3}
+  - img: {fileID: -7378396247315863920, guid: 5018ab51d8d5375438dee091533efc6f, type: 3}
+  - img: {fileID: 1590750627849223398, guid: d6884068e3cb5f348a7628015cd51d73, type: 3}
+  - img: {fileID: -2022169436498817301, guid: 436bc408f48ac204088b720bdc533fd0, type: 3}
+  - img: {fileID: -2582588146821995224, guid: 886bce7bfbdfcb64ca55a2ce5b383ffc, type: 3}
+  - img: {fileID: 2531801685237028551, guid: 01bdbf8481d3a0b4cab27685991d7674, type: 3}
+  - img: {fileID: 7361275830291316977, guid: aae0a0a7091e316428bbb2c440894ad2, type: 3}
 --- !u!1 &2137454017
 GameObject:
   m_ObjectHideFlags: 0

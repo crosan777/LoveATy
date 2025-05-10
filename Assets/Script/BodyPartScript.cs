@@ -5,41 +5,29 @@ using UnityEngine;
 
 public class BodyPartScript : MonoBehaviour
 {
-    
+
     [Serializable]
     public struct Sprites
     {
         
-        public Sprite down;
+        public Sprite img;
         
     }
+
+    public string bodyPartTitle;
 
     public Sprites[] sprites;
     int index = 0;
 
     private void Start()
     {
-        if (sprites.Length > 0)
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
-        }
-        else
-        {
-            Debug.LogWarning($"{gameObject.name} has no sprites assigned!");
-        }
+        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].img;
     }
 
     public void UpdateSprite(int newIndex)
     {
         index = newIndex;
-        if (sprites.Length > 0)
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
-        }
-        else
-        {
-            Debug.LogWarning($"{gameObject.name} has no sprites assigned!");
-        }
+        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].img;
     }
 
     public int GetSpritesLength()
@@ -55,14 +43,7 @@ public class BodyPartScript : MonoBehaviour
     public void UpdateToNextSprite()
     {
         if (++index > sprites.Length - 1) index = 0;
-        if (sprites.Length > 0)
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
-        }
-        else
-        {
-            Debug.LogWarning($"{gameObject.name} has no sprites assigned!");
-        }
+        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].img;
     }
 
     public void UpdateSpriteColor(Color32 newColor)

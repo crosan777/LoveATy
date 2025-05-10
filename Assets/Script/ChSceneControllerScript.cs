@@ -100,10 +100,9 @@ public class ChSceneControllerScript : MonoBehaviour
     {
         int i = 0;
         string[] allNames = new string[playerScript.bodyParts.Length];
-        foreach (BodyPartScript partScript in playerScript.bodyParts)
-        {           
-            allNames[i] = partScript.gameObject.name;
-            i++;
+        for (i = 0; i < playerScript.bodyParts.Length; i++)
+        {
+            allNames[i] = playerScript.bodyParts[i].GetComponent<BodyPartScript>().bodyPartTitle;
         }
         return allNames;
     }
@@ -125,6 +124,5 @@ public class ChSceneControllerScript : MonoBehaviour
     private void SubmitClickedLoadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        playerScript.ChangePlayerScale(0.3f);
     }
 }
