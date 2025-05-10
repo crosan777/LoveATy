@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sunglasses 2_0: -2474875876146295072
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

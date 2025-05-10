@@ -19,13 +19,27 @@ public class BodyPartScript : MonoBehaviour
 
     private void Start()
     {
-        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
+        if (sprites.Length > 0)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
+        }
+        else
+        {
+            Debug.LogWarning($"{gameObject.name} has no sprites assigned!");
+        }
     }
 
     public void UpdateSprite(int newIndex)
     {
         index = newIndex;
-        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
+        if (sprites.Length > 0)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
+        }
+        else
+        {
+            Debug.LogWarning($"{gameObject.name} has no sprites assigned!");
+        }
     }
 
     public int GetSpritesLength()
@@ -41,7 +55,14 @@ public class BodyPartScript : MonoBehaviour
     public void UpdateToNextSprite()
     {
         if (++index > sprites.Length - 1) index = 0;
-        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
+        if (sprites.Length > 0)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].down;
+        }
+        else
+        {
+            Debug.LogWarning($"{gameObject.name} has no sprites assigned!");
+        }
     }
 
     public void UpdateSpriteColor(Color32 newColor)

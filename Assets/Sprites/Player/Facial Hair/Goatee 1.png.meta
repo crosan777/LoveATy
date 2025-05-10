@@ -237,7 +237,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Goatee 1_0: -653017217246115149
+      Goatee 1_1: 5138911738146312948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

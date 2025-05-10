@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fur Jacket_0: 5632169952224551509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

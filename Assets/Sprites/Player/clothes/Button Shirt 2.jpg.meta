@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Button Shirt 2_0: -2270770034975238942
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
