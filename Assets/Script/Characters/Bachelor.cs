@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Client : Character
 {
-    public Client(string name, string surname, string surname2, string Description,
+    public Client(string name, string surname, string surname2, string Description, int age,
            ActivityType activity, MethodologyType methodology,
            SocialType social, TraditionType tradition,
            RelationshipType relationship) : base (name, surname, surname2, Description,

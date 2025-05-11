@@ -5,6 +5,8 @@ using TMPro;
 
 public class BachelorDisplay : MonoBehaviour
 {
+    [Header("Components")]
+    public TMP_Text Name;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public class  Bachelor
     {
