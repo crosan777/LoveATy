@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Character
+public abstract class Character : MonoBehaviour
 {
     #region Atributes
-    public string Name { get; set; }
+    public string Name { get; set; } 
     public string Surname { get; set; }
     public string Surname2 { get; set; }
 
-    public string Description { get; set; }
+    public string Description;
 
     public int Age = 18;
 

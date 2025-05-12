@@ -539,7 +539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -6.6, y: -0.1689}
+  m_AnchoredPosition: {x: -6.3, y: -0.15}
   m_SizeDelta: {x: 652.7064, y: 849.2274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986828269
@@ -605,6 +605,71 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &5953384942975206631
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6719781451127824621, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: Description
+      value: "Tu pareja quiere apuntarse a bailes de sal\xF3n, t\xFA\u2026  Pienso
+        que me est\xE1 tomando el pelo  Cuando miras la tele\u2026  Miro mi programa
+        y despu\xE9s apago  En una fiesta t\xFA\u2026   Soy el alma de la fiesta 
+        \xBFQu\xE9 tipo de juegos prefieres?  Los Videojuegos  Cuando compras una
+        cama, tienes en cuenta\u2026 Lo bien que dormir\xE1s en ella yo y mi pareja"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845389689817351629, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052299488107494033, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
+      propertyPath: m_Name
+      value: Bachelor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7fbaafd55737a3c49bf84e9c08680c15, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -612,3 +677,4 @@ SceneRoots:
   - {fileID: 557622977}
   - {fileID: 1361591113}
   - {fileID: 1430408906}
+  - {fileID: 5953384942975206631}

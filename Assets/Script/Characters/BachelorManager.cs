@@ -10,17 +10,17 @@ public class BachelorManager : MonoBehaviour
     
     private void BachelorList (List<Bachelor> Bachelors)
     {
-            new Client ("Ricard", "Perea", "Ros",
+            new Bachelor ("Ricard", "Perea", "Ros",
                 "- Tu pareja quiere apuntarse a bailes de salón, tú... Pienso que me está tomando el peloç" +
                 "Cuando miras la tele... Miro mi programa favorito y despúes apago" +
                 "En una fiesta eres... el alma de la fiesta" +
                 "¿Qué tipo de juegos prefieres? Los Videojuegos" +
                 "Cuando compras una cama, tienes en cuenta...Lo bien que dormire en ella yo y mi pareja", 18,
-                Client.ActivityType.Tranquilo,
-                Client.MethodologyType.Metodico,
-                Client.SocialType.Extrovertido,
-                Client.TraditionType.Moderno,
-                Client.RelationshipType.Romantico);
+                Bachelor.ActivityType.Tranquilo,
+                Bachelor.MethodologyType.Metodico,
+                Bachelor.SocialType.Extrovertido,
+                Bachelor.TraditionType.Moderno,
+                Bachelor.RelationshipType.Romantico);
             
     }
     
