@@ -29,7 +29,7 @@ public class BachelorManager : MonoBehaviour
     {
         for (int i = 0; i < 1; i++)
         {
-            Bachelors.Add();
+        
         }
     }
 
