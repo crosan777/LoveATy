@@ -25,7 +25,7 @@ public class BachelorDisplay : MonoBehaviour
         public Text DescriptionText;
 
         public UnityEngine.UI.Button leftArrow;
-        public UnityEngine.UI.Button rightArrow;    
+        public UnityEngine.UI.Button rightArrow;
 
         public Bachelor[] bachelors;
         private int actualIndex = 0;
