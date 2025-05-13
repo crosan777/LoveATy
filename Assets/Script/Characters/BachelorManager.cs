@@ -6,11 +6,11 @@ using System;
 
 public class BachelorManager : MonoBehaviour
 {
-    public List<Bachelor> Bachelors = new List<Bachelor>();
+    public List<ScriptableObject> Bachelors = new List<ScriptableObject>();
     
     private void BachelorList (List<Bachelor> Bachelors)
     {
-            new Bachelor ("Ricard", "Perea", "Ros",
+            Bachelors.Add(new Bachelor ("Ricard", "Perea", "Ros",
                 "- Tu pareja quiere apuntarse a bailes de salón, tú... Pienso que me está tomando el peloç" +
                 "Cuando miras la tele... Miro mi programa favorito y despúes apago" +
                 "En una fiesta eres... el alma de la fiesta" +
@@ -20,17 +20,14 @@ public class BachelorManager : MonoBehaviour
                 Bachelor.MethodologyType.Metodico,
                 Bachelor.SocialType.Extrovertido,
                 Bachelor.TraditionType.Moderno,
-                Bachelor.RelationshipType.Romantico);
+                Bachelor.RelationshipType.Romantico));
             
     }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for (int i = 0; i < 1; i++)
-        {
-        
-        }
+        BachelorList(ScriptableObject);
     }
 
     // Update is called once per frame
