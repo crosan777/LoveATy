@@ -25,11 +25,5 @@ public class PlayerScript : MonoBehaviour
         bodyParts[partIndex].UpdateSprite(spriteIndex);
     }
 
-    public void ChangePlayerScale(float newScale)
-    {
-        transform.localScale = new Vector3(newScale, newScale, 0);
-    }
-
-
    
 }
