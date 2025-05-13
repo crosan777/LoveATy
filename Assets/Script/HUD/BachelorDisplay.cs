@@ -10,10 +10,11 @@ public class BachelorDisplay : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public class  Bachelor
     {
-        public Sprite Photo;
+        
         public string NameSurnames;
         public int age;
         public string description;
+
     }
 
     public class BachelorPanel : MonoBehaviour

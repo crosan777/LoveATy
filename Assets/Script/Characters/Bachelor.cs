@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bachelor : Character
+public class Bachelor : Character ScriptableObject
 {
     public Bachelor(string name, string surname, string surname2, string Description, int age,
            ActivityType activity, MethodologyType methodology,

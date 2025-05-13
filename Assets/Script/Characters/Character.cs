@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Character : MonoBehaviour
+public abstract class Character : ScriptableObject
 {
     #region Atributes
     public string Name { get; set; } 
@@ -18,7 +18,6 @@ public abstract class Character : MonoBehaviour
     public enum TraditionType { Clasico , Moderno }
     public enum RelationshipType { Romantico, Picante, Tierno, Evitativo }
     
-
     public ActivityType Activity;
     public MethodologyType Methodology;
     public SocialType Social;
@@ -26,19 +25,9 @@ public abstract class Character : MonoBehaviour
     public RelationshipType Relationship;
 
     #endregion
-
-    public Character (string name, string surname, string surname2, string Description, 
-          ActivityType activity, MethodologyType methodology,
-          SocialType social, TraditionType tradition,
-          RelationshipType relationship) // Constructor for characters
+    public void getCandidateInfo ()
     {
-        Name = name; //Name
-        Surname = surname; //Surname
-        Surname2 = surname2; //Surname2
-        Activity = activity; //Activity type
-        Methodology = methodology; //Methodology Type
-        Social = social; //Social Type
-        Tradition = tradition; //Tradition type
-        Relationship = relationship; //Relationship type
+         
     }
+    
 }

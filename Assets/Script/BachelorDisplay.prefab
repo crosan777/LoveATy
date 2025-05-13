@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 941382433223949900}
   - component: {fileID: 8569334735565977135}
   - component: {fileID: 2629838291667893347}
+  - component: {fileID: 136079558201551641}
   m_Layer: 0
   m_Name: BachelorDisplay
   m_TagString: Untagged
@@ -238,3 +239,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &136079558201551641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525210709799335358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 550eb0fab0012eb4f84cbc9252bd1f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  Age: 0
+  Activity: 0
+  Methodology: 0
+  Social: 0
+  Tradition: 0
+  Relationship: 0
