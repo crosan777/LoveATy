@@ -17,7 +17,7 @@ public class BodyPartScript : MonoBehaviour
     public string bodyPartTitle;
 
     public Sprites[] sprites;
-    int index = 1;
+    int index = 0;
 
     private void Start()
     {
