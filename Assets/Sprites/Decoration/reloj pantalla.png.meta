@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0045bb9301189524ea2b97fd033fc837
+guid: 801f08194f2f416439f9e28cbb03b312
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4462547780969821445
-    second: ThinkingMen_0
+      213: 855951615461434476
+    second: reloj pantalla_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThinkingMen_0
+      name: reloj pantalla_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 95
-        height: 235
+        x: 327
+        y: 237
+        width: 189
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bfa0612df68d112c0800000000000000
-      internalID: -4462547780969821445
+      spriteID: c6420809573f0eb00800000000000000
+      internalID: 855951615461434476
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ThinkingMen_0: -4462547780969821445
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

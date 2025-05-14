@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d8ac5bb47d5eb65479121d7e39589687
+guid: d6aa85ab048e5e5449fec93609f57e19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5224006275224459464
-    second: Corazon Azul_0
+      213: -759190812991726819
+    second: marc pantalla gran_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Corazon Azul_0
+      name: marc pantalla gran_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 166
-        height: 146
+        x: 80
+        y: 82
+        width: 701
+        height: 402
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 837a5dc78f99087b0800000000000000
-      internalID: -5224006275224459464
+      spriteID: d1b53ea5affc675f0800000000000000
+      internalID: -759190812991726819
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Corazon Azul_0: -5224006275224459464
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

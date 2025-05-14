@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9bbbd8465a7cef64496ea4a45a2e237b
+guid: e81e17bf2e90eb84787711d32d00d116
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7262729347699183070
-    second: "Vi\xF1etaSprite_0"
+      213: -1454561715569225955
+    second: pantalla gran_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Vi\xF1etaSprite_0"
+      name: pantalla gran_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 105
-        height: 71
+        x: 109
+        y: 114
+        width: 644
+        height: 337
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 222f59a432a953b90800000000000000
-      internalID: -7262729347699183070
+      spriteID: d1f0d9783db50dbe0800000000000000
+      internalID: -1454561715569225955
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Vi\xF1etaSprite_0": -7262729347699183070
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

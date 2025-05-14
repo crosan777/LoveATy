@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f167e7a5790412e4b85267f5bb333a08
+guid: 86bed2e5d8fa737448fa0d105084b601
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2663294290367147541
-    second: Corazon Verde_0
+      213: -1285039963977838219
+    second: marc pantalla petita esq_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Corazon Verde_0
+      name: marc pantalla petita esq_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 166
-        height: 146
+        x: 303
+        y: 51
+        width: 238
+        height: 467
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be1175224f31a0bd0800000000000000
-      internalID: -2663294290367147541
+      spriteID: 5719be016fe9a2ee0800000000000000
+      internalID: -1285039963977838219
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Corazon Verde_0: -2663294290367147541
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
