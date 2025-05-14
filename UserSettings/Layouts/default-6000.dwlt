@@ -15,11 +15,11 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 42
-    width: 1260
-    height: 750
+    y: 43.2
+    width: 1536
+    height: 772.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,16 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 1260
-    height: 694
+    width: 1536
+    height: 716.8
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 91
-=======
-  controlID: 36
->>>>>>> Bachelor-Display
+  controlID: 47
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -69,19 +65,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 961.5
+    x: 1172
     y: 0
-<<<<<<< HEAD
-    width: 298.5
-    height: 694
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
-=======
     width: 364
     height: 716.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> Bachelor-Display
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -104,8 +93,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 238
-    height: 410.5
+    width: 290.4
+    height: 424
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
@@ -129,9 +118,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 410.5
-    width: 961.5
-    height: 283.5
+    y: 424
+    width: 1172
+    height: 292.8
   m_MinSize: {x: 231, y: 276}
   m_MaxSize: {x: 10001, y: 10026}
   m_ActualView: {fileID: 12}
@@ -160,8 +149,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1260
-    height: 750
+    width: 1536
+    height: 772.8
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -185,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1260
+    width: 1536
     height: 36
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -206,8 +195,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 730
-    width: 1260
+    y: 752.8
+    width: 1536
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -230,12 +219,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 961.5
-    height: 694
+    width: 1172
+    height: 716.8
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 37
+  controlID: 48
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -256,12 +245,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 961.5
-    height: 410.5
+    width: 1172
+    height: 424
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 38
+  controlID: 39
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -278,19 +267,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 238
+    x: 290.4
     y: 0
-<<<<<<< HEAD
-    width: 723.5
-    height: 410.5
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
-=======
     width: 881.6
     height: 424
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> Bachelor-Display
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -319,9 +301,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 488.5
-    width: 960.5
-    height: 257.5
+    y: 448
+    width: 1171
+    height: 266.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -344,11 +326,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-    - Assets/Sprites/Decoration
-=======
     - Assets/Scripts/Characters
->>>>>>> Bachelor-Display
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -358,27 +336,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-<<<<<<< HEAD
-  - Assets/Sprites/Decoration
-=======
   - Assets/Scripts/Characters
->>>>>>> Bachelor-Display
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\vidal\Documents\GitHub\LoveATy
+  m_LastProjectPath: C:\LoveATy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 2.5}
-    m_SelectedIDs: 287d0000
-    m_LastClickedID: 32040
-    m_ExpandedIDs: 000000000e7a0000727a000000ca9a3bffffff7f
-=======
     scrollPos: {x: 0, y: 73.20001}
-    m_SelectedIDs: 14790000
-    m_LastClickedID: 30996
-    m_ExpandedIDs: 00000000aa780000087900000a790000407e0000
->>>>>>> Bachelor-Display
+    m_SelectedIDs: 50790000
+    m_LastClickedID: 31056
+    m_ExpandedIDs: 00000000fa780000fc780000fe780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -407,11 +374,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 000000000e7a0000
-=======
-    m_ExpandedIDs: 00000000aa780000
->>>>>>> Bachelor-Display
+    m_ExpandedIDs: 00000000fa780000fc780000fe780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -490,10 +453,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 961.5
-    y: 78
-    width: 297.5
-    height: 668
+    x: 1173
+    y: 24
+    width: 363
+    height: 690.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -540,9 +503,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 78
-    width: 237
-    height: 384.5
+    y: 24
+    width: 289.4
+    height: 398
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -557,15 +520,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: eaf6ffffcef8ffff7efaffff
-=======
-      m_SelectedIDs: 7c1f0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: c2daffff80dfffff80e1ffffb6e2ffff68e4ffffb0e4ffff00e5ffffc8f4ffff0afbffff6e7a0000727a0000cc830000d0830000
->>>>>>> Bachelor-Display
+      m_ExpandedIDs: 5cf8ffff0afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -611,10 +568,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 238
-    y: 78
-    width: 721.5
-    height: 384.5
+    x: 291.4
+    y: 24
+    width: 879.6
+    height: 398
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1183,15 +1140,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: -4.158528, y: 0.77032983, z: -0.57306117}
+    m_Target: {x: -3.6567478, y: 0.30590358, z: -0.51456255}
     speed: 2
-    m_Value: {x: -4.2671814, y: 0.8471267, z: -0.5689824}
-=======
-    m_Target: {x: -2.9710116, y: -0.92838997, z: -0.51456255}
-    speed: 2
-    m_Value: {x: -2.712522, y: -0.9020794, z: -0.5167089}
->>>>>>> Bachelor-Display
+    m_Value: {x: -3.6567478, y: 0.30590358, z: -0.51456255}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1241,15 +1192,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-    m_Target: 9.471812
-    speed: 2
-    m_Value: 9.063935
-=======
     m_Target: 4.5551085
     speed: 2
-    m_Value: 4.7697473
->>>>>>> Bachelor-Display
+    m_Value: 4.5551085
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1304,10 +1249,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 238
-    y: 78
-    width: 721.5
-    height: 384.5
+    x: 290.4
+    y: 79.200005
+    width: 879.6
+    height: 398
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1340,10 +1285,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -480
-    m_HBaseRangeMax: 480
-    m_VBaseRangeMin: -270
-    m_VBaseRangeMax: 270
+    m_HBaseRangeMin: -768
+    m_HBaseRangeMax: 768
+    m_VBaseRangeMin: -432
+    m_VBaseRangeMax: 432
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1361,28 +1306,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 721.5
-      height: 363.5
-    m_Scale: {x: 0.67314816, y: 0.67314816}
-    m_Translation: {x: 360.75, y: 181.75}
+      width: 879.6
+      height: 377
+    m_Scale: {x: 0.4363426, y: 0.4363426}
+    m_Translation: {x: 439.8, y: 188.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -535.91473
-      y: -270
-      width: 1071.8295
-      height: 540
+      x: -1007.9236
+      y: -432
+      width: 2015.8472
+      height: 864
     m_MinimalGUI: 1
-<<<<<<< HEAD
-  m_defaultScale: 0.67314816
-  m_LastWindowPixelSize: {x: 1443, y: 769}
-=======
   m_defaultScale: 0.4363426
-  m_LastWindowPixelSize: {x: 1099.5, y: 497.5}
->>>>>>> Bachelor-Display
+  m_LastWindowPixelSize: {x: 879.6, y: 398}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
