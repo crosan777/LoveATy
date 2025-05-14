@@ -48,7 +48,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 91
+=======
+  controlID: 36
+>>>>>>> Bachelor-Display
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -67,10 +71,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 961.5
     y: 0
+<<<<<<< HEAD
     width: 298.5
     height: 694
   m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
+=======
+    width: 364
+    height: 716.8
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> Bachelor-Display
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -269,10 +280,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 238
     y: 0
+<<<<<<< HEAD
     width: 723.5
     height: 410.5
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
+=======
+    width: 881.6
+    height: 424
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> Bachelor-Display
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -326,7 +344,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Sprites/Decoration
+=======
+    - Assets/Scripts/Characters
+>>>>>>> Bachelor-Display
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -336,16 +358,27 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Sprites/Decoration
+=======
+  - Assets/Scripts/Characters
+>>>>>>> Bachelor-Display
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\vidal\Documents\GitHub\LoveATy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 2.5}
     m_SelectedIDs: 287d0000
     m_LastClickedID: 32040
     m_ExpandedIDs: 000000000e7a0000727a000000ca9a3bffffff7f
+=======
+    scrollPos: {x: 0, y: 73.20001}
+    m_SelectedIDs: 14790000
+    m_LastClickedID: 30996
+    m_ExpandedIDs: 00000000aa780000087900000a790000407e0000
+>>>>>>> Bachelor-Display
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -374,7 +407,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000000e7a0000
+=======
+    m_ExpandedIDs: 00000000aa780000
+>>>>>>> Bachelor-Display
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,9 +557,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: eaf6ffffcef8ffff7efaffff
+=======
+      m_SelectedIDs: 7c1f0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: c2daffff80dfffff80e1ffffb6e2ffff68e4ffffb0e4ffff00e5ffffc8f4ffff0afbffff6e7a0000727a0000cc830000d0830000
+>>>>>>> Bachelor-Display
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1140,9 +1183,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -4.158528, y: 0.77032983, z: -0.57306117}
     speed: 2
     m_Value: {x: -4.2671814, y: 0.8471267, z: -0.5689824}
+=======
+    m_Target: {x: -2.9710116, y: -0.92838997, z: -0.51456255}
+    speed: 2
+    m_Value: {x: -2.712522, y: -0.9020794, z: -0.5167089}
+>>>>>>> Bachelor-Display
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1192,9 +1241,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 9.471812
     speed: 2
     m_Value: 9.063935
+=======
+    m_Target: 4.5551085
+    speed: 2
+    m_Value: 4.7697473
+>>>>>>> Bachelor-Display
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1297,7 +1352,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1321,8 +1376,13 @@ MonoBehaviour:
       width: 1071.8295
       height: 540
     m_MinimalGUI: 1
+<<<<<<< HEAD
   m_defaultScale: 0.67314816
   m_LastWindowPixelSize: {x: 1443, y: 769}
+=======
+  m_defaultScale: 0.4363426
+  m_LastWindowPixelSize: {x: 1099.5, y: 497.5}
+>>>>>>> Bachelor-Display
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
