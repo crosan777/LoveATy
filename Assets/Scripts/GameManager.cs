@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public List<Candidatos> personajes;
+    //public List<Candidatos> personajes;
 
     private void Awake()
     {
