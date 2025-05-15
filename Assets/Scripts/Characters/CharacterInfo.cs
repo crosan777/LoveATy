@@ -16,6 +16,7 @@ public enum GenderType { Male, Female }
 public class Character : ScriptableObject
 {
     #region Atributes
+    public Sprite imgage;
     public string Name { get; set; }
     public string Surname { get; set; }
     public string Surname2 { get; set; }
