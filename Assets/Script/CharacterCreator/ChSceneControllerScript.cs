@@ -37,7 +37,7 @@ public class ChSceneControllerScript : MonoBehaviour
         ArrowClicked(0);
     }
 
-    private PlayerScript RandomPlayerSprites() //antes public void
+    public void RandomPlayerSprites()
     {
         int orgPartIndex = partIndex;
         int len = playerScript.bodyParts.Length - 1;
@@ -54,10 +54,9 @@ public class ChSceneControllerScript : MonoBehaviour
 
       
         partIndex = orgPartIndex;
-        return playerScript; //prueba para candidate
     }
 
-    public void RandomizePartColor(string partTag)
+    void RandomizePartColor(string partTag)
     {
         UnityEngine.Color randomColor = new UnityEngine.Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
         ChangeCurrentPartColor(randomColor);

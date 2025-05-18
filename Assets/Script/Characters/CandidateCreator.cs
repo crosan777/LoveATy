@@ -5,6 +5,9 @@ public class CandidateCreator : MonoBehaviour
 {
 
     public Character RandomCharacter;
+    public CandidateCreator candidateCreator;
+    public static Character CreatedCharacter;
+    public PlayerScript playerScript;
 
     List<string> maleNames = new List<string> {
     "Liam", "Noah", "Oliver", "Oleksiy" , "Elijah", "James", "William", "Benjamin", "Lucas", "Henry", "Alexander",
@@ -61,6 +64,34 @@ public class CandidateCreator : MonoBehaviour
         RandomCharacter = new Character();
         FillCharacterAttributesRandomly(ref RandomCharacter);
         return RandomCharacter;
+    }
+    //portrait
+    private PlayerScript RandomPlayerSprites()
+    {
+        // Lógica para randomizar sprites dentro de playerScript
+        // Ejemplo que ya tienes
+        int orgPartIndex = 0;
+        int len = playerScript.bodyParts.Length;
+
+        for (int i = 0; i < len; i++)
+        {
+            int rndSpriteIndex = Random.Range(0, playerScript.bodyParts[i].GetSpritesLength());
+            playerScript.bodyParts[i].UpdateSprite(rndSpriteIndex);
+            RandomizePartColor(playerScript.bodyParts[i].tag);
+        }
+
+        return playerScript;
+    }
+
+    public PlayerScript CreateRandomCandidate()
+    {
+        return RandomPlayerSprites();
+    }
+
+    private void RandomizePartColor(string tag)
+    {
+        UnityEngine.Color randomColor = new UnityEngine.Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
+        ChangeCurrentPartColor(randomColor);
     }
 }
 

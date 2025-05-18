@@ -12,6 +12,8 @@ public enum GenderType { Male, Female }
 public class Character : MonoBehaviour
 {
     #region Atributes
+    public Sprite PortraitSprite;
+
     public string Name { get; set; } 
     public string Surname { get; set; }
     public string Surname2 { get; set; }
