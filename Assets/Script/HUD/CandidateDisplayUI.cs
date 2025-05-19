@@ -5,6 +5,7 @@ using TMPro;
 public class CandidateDisplayUI : MonoBehaviour
 {
     public Image portraitImage;
+
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI AgeNumber;
     public TextMeshProUGUI genderText;
@@ -42,6 +43,9 @@ public class CandidateDisplayUI : MonoBehaviour
 
     public void DisplayCandidate(Character candidate)
     {
+
+        portraitImage.sprite = candidate.PortraitSprite;
+
         nameText.text = $"{candidate.Name} {candidate.Surname} {candidate.Surname2}";
         AgeNumber.text = $"Edad: {candidate.Age}";
         genderText.text = $"Género: {candidate.Gender}";

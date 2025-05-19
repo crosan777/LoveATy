@@ -37,7 +37,7 @@ public class ChSceneControllerScript : MonoBehaviour
         ArrowClicked(0);
     }
 
-    private PlayerScript RandomPlayerSprites() //antes public void
+    public PlayerScript RandomPlayerSprites() //antes public void
     {
         int orgPartIndex = partIndex;
         int len = playerScript.bodyParts.Length - 1;

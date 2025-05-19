@@ -7,7 +7,14 @@ public class CandidateCreator : MonoBehaviour
     public Character RandomCharacter;
     public CandidateCreator candidateCreator;
     public static Character CreatedCharacter;
+
+    //TRYS
     public PlayerScript playerScript;
+    public ChSceneControllerScript chSceneController;
+    public Camera portraitCamera;
+    public RenderTexture portraitRenderTexture;
+
+
 
     List<string> maleNames = new List<string> {
     "Liam", "Noah", "Oliver", "Oleksiy" , "Elijah", "James", "William", "Benjamin", "Lucas", "Henry", "Alexander",
@@ -42,15 +49,17 @@ public class CandidateCreator : MonoBehaviour
         if (NewCharacter.Gender == GenderType.Female)
         {
             NewCharacter.Name = femaleNames[Random.Range(0, femaleNames.Count)];
-            NewCharacter.Surname = surnames[Random.Range(0, femaleNames.Count)];
-            NewCharacter.Surname2 = surnames[Random.Range(0, femaleNames.Count)];
+            NewCharacter.Surname = surnames[Random.Range(0, surnames.Count)];
+            NewCharacter.Surname2 = surnames[Random.Range(0, surnames.Count)];
         }
         else
         {
-            NewCharacter.Name = maleNames[Random.Range(0, femaleNames.Count)];
-            NewCharacter.Surname = surnames[Random.Range(0, femaleNames.Count)];
-            NewCharacter.Surname2 = surnames[Random.Range(0, femaleNames.Count)];
+            NewCharacter.Name = maleNames[Random.Range(0, maleNames.Count)];
+            NewCharacter.Surname = surnames[Random.Range(0, surnames.Count)];
+            NewCharacter.Surname2 = surnames[Random.Range(0, surnames.Count)];
         }
+
+        NewCharacter.Age = Random.Range(18, 21);
 
         NewCharacter.Activity = (ActivityType)Random.Range(0, 2);
         NewCharacter.Methodology = (MethodologyType)Random.Range(0,3);
@@ -65,33 +74,41 @@ public class CandidateCreator : MonoBehaviour
         FillCharacterAttributesRandomly(ref RandomCharacter);
         return RandomCharacter;
     }
-    //portrait
-    private PlayerScript RandomPlayerSprites()
+
+    private Sprite CapturePortraitFromCamera(Camera cam)
     {
-        // Lógica para randomizar sprites dentro de playerScript
-        // Ejemplo que ya tienes
-        int orgPartIndex = 0;
-        int len = playerScript.bodyParts.Length;
+        RenderTexture currentRT = RenderTexture.active;
+        RenderTexture.active = cam.targetTexture;
 
-        for (int i = 0; i < len; i++)
-        {
-            int rndSpriteIndex = Random.Range(0, playerScript.bodyParts[i].GetSpritesLength());
-            playerScript.bodyParts[i].UpdateSprite(rndSpriteIndex);
-            RandomizePartColor(playerScript.bodyParts[i].tag);
-        }
+        Texture2D image = new Texture2D(cam.targetTexture.width, cam.targetTexture.height, TextureFormat.RGBA32, false);
+        image.ReadPixels(new Rect(0, 0, cam.targetTexture.width, cam.targetTexture.height), 0, 0);
+        image.Apply();
 
-        return playerScript;
+        RenderTexture.active = currentRT;
+
+        Sprite sprite = Sprite.Create(image, new Rect(0, 0, image.width, image.height), new Vector2(0.5f, 0.5f));
+        return sprite;
     }
 
-    public PlayerScript CreateRandomCandidate()
+    public Character GenerateFullRandomCandidate()
     {
-        return RandomPlayerSprites();
+        //instancia de personaje
+        Character candidate = new Character();
+
+        // atributos 
+        FillCharacterAttributesRandomly(ref candidate);
+
+        // apariencia 
+        chSceneController.RandomPlayerSprites();
+
+        // retrato 
+        candidate.PortraitSprite = CapturePortraitFromCamera(portraitCamera);
+
+        // 5. guardar referencia 
+        CreatedCharacter = candidate;
+
+        return candidate;
     }
 
-    private void RandomizePartColor(string tag)
-    {
-        UnityEngine.Color randomColor = new UnityEngine.Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
-        ChangeCurrentPartColor(randomColor);
-    }
 }
 
