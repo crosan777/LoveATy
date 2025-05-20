@@ -13,11 +13,11 @@ public enum GenderType { Male, Female }
 
 
 [CreateAssetMenu(fileName = "NewCharacterInfo", menuName = "Love Agency/Character")]
-public class Character : ScriptableObject
+public class CharacterInfo : ScriptableObject
 {
     #region Atributes
-    public Sprite imgage;
-    public string Name { get; set; }
+    public Sprite image;
+    public string Name = "pepito";
     public string Surname { get; set; }
     public string Surname2 { get; set; }
 
