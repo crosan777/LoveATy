@@ -17,7 +17,7 @@ public class CharacterInfo : ScriptableObject
 {
     #region Atributes
     public Sprite image;
-    public string Name = "pepito";
+    public string Name;
     public string Surname { get; set; }
     public string Surname2 { get; set; }
 

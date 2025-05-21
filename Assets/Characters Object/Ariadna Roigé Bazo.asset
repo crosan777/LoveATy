@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 6290399929846451232, guid: ae98dde501eb07d45b078934f40e8bb1, type: 3}
   Name: "Ariadna Roig\xE9 Bazo"
-  Description: 'Bla bklabla '
+  Description: 
   Age: 18
   Gender: 1
   Activity: 0

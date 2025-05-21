@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ae98dde501eb07d45b078934f40e8bb1
+guid: e4f5cad3f05dccf4fbaad7b6ead2698d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1370624195929071563
-    second: Ari_0
+      213: -1854221845487033379
+    second: Jan Rivero_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ari_0
+      name: Jan Rivero_0
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
-        width: 361
-        height: 542
+        x: 111
+        y: 4
+        width: 351
+        height: 562
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcf58eeb17f650310800000000000000
-      internalID: 1370624195929071563
+      spriteID: dd3e9fc3e0b7446e0800000000000000
+      internalID: -1854221845487033379
       vertices: []
       indices: 
       edges: []
