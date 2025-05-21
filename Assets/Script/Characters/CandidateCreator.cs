@@ -1,18 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class CandidateCreator : MonoBehaviour
+[System.Serializable]
+public class CandidateCreator
 {
-
     public Character RandomCharacter;
-    public CandidateCreator candidateCreator;
-    public static Character CreatedCharacter;
 
     //TRYS
     public PlayerScript playerScript;
-    public ChSceneControllerScript chSceneController;
-    public Camera portraitCamera;
-    public RenderTexture portraitRenderTexture;
+    //public ChSceneControllerScript chSceneController;
+    //public Camera portraitCamera;
+    //public RenderTexture portraitRenderTexture;
 
 
 
@@ -98,14 +96,15 @@ public class CandidateCreator : MonoBehaviour
         // atributos 
         FillCharacterAttributesRandomly(ref candidate);
 
-        // apariencia 
-        chSceneController.RandomPlayerSprites();
+        // apariencia
+        //chSceneController = new ChSceneControllerScript();
+        //chSceneController.RandomPlayerSprites();
 
         // retrato 
-        candidate.PortraitSprite = CapturePortraitFromCamera(portraitCamera);
+        ///candidate.PortraitSprite = CapturePortraitFromCamera(portraitCamera);
 
         // 5. guardar referencia 
-        CreatedCharacter = candidate;
+        RandomCharacter = candidate;
 
         return candidate;
     }

@@ -4,7 +4,7 @@ using TMPro;
 
 public class CandidateDisplayUI : MonoBehaviour
 {
-    public Image portraitImage;
+    public Image portraitImage = PortraitGenerator;
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI AgeNumber;
@@ -33,6 +33,18 @@ public class CandidateDisplayUI : MonoBehaviour
     public Sprite picanteSprite;
     public Sprite evitativoSprite;
 
+    private CandidateCreator candidateCreator;
+
+    void Start()
+    {
+        candidateCreator = new CandidateCreator();
+        ChangeCandidate();
+    }
+
+    public void ChangeCandidate()
+    {
+        DisplayCandidate(candidateCreator.GenerateFullRandomCandidate());
+    }
 
     //REFF
     //public enum ActivityType { Activo, Tranquilo } 
@@ -48,14 +60,14 @@ public class CandidateDisplayUI : MonoBehaviour
 
         nameText.text = $"{candidate.Name} {candidate.Surname} {candidate.Surname2}";
         AgeNumber.text = $"Edad: {candidate.Age}";
-        genderText.text = $"Género: {candidate.Gender}";
+        genderText.text = $"Gï¿½nero: {candidate.Gender}";
 
 
         //activityText.text = $"Actividad: {candidate.Activity}";
-        //methodologyText.text = $"Metodología: {candidate.Methodology}";
+        //methodologyText.text = $"Metodologï¿½a: {candidate.Methodology}";
         //socialText.text = $"Social: {candidate.Social}";
-        //relationshipText.text = $"Relación: {candidate.Relationship}";
-        //traditionText.text = $"Tradición: {candidate.Tradition}";
+        //relationshipText.text = $"Relaciï¿½n: {candidate.Relationship}";
+        //traditionText.text = $"Tradiciï¿½n: {candidate.Tradition}";
 
        // activityIconImage.sprite = character.Activity ==
 
