@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f75c7b4b3e4a3f04bab1c93e4f733914, type: 3}
-  m_Name: "Ariadna Roig\xE9 Bazo"
+  m_Name: Laia
   m_EditorClassIdentifier: 
-  imgage: {fileID: 6290399929846451232, guid: ae98dde501eb07d45b078934f40e8bb1, type: 3}
-  Description: agshgahvagvaga
+  image: {fileID: -4648495762645734255, guid: 86f900db0a092e4439876af15d7e97b8, type: 3}
+  Name: Laia
+  Description: 
   Age: 18
-  Gender: 1
+  Gender: 0
   Activity: 0
-  Methodology: 1
+  Methodology: 0
   Social: 0
   Tradition: 0
   Relationship: 0
