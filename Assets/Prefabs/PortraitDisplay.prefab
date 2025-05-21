@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3616479596762809671}
   - component: {fileID: 6537738784733842094}
   - component: {fileID: 8850253851693337628}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HEAD
   m_TagString: Face
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2926369175066399495}
   - component: {fileID: 8275179208779367801}
   - component: {fileID: 5423598774945310813}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Tee Selena
   m_TagString: Shirt
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 2974044743500783409}
   - component: {fileID: 6313197435364712270}
   - component: {fileID: 7349501094487454999}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Glasses_0
   m_TagString: Accesory
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 7733513531765995355}
   - component: {fileID: 975721307999868353}
   - component: {fileID: 6277511461711997629}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Medium Bangs 3_0 (1)
   m_TagString: Hair
   m_Icon: {fileID: 0}
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 660208725045218393}
   - component: {fileID: 2540560869310702183}
   - component: {fileID: 3795407731959771185}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Awe
   m_TagString: Face
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 5639733715732986095}
   - component: {fileID: 3009628693729771466}
   - component: {fileID: 532087164050998263}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Chin_0
   m_TagString: Facial Hair
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3515779267514393268}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Accesory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,24 +731,25 @@ GameObject:
   m_Component:
   - component: {fileID: 1526447970604236805}
   - component: {fileID: 4723097244929075523}
-  m_Layer: 0
+  - component: {fileID: 2699855665973698870}
+  - component: {fileID: 476780922730946573}
+  m_Layer: 5
   m_Name: PortraitDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1526447970604236805
-Transform:
+--- !u!224 &1526447970604236805
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6592344474972795041}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -71.24024, y: -28.323788, z: -4879.84}
-  m_LocalScale: {x: 54.201023, y: 54.201023, z: 54.201023}
+  m_LocalPosition: {x: 0, y: 0, z: -1463.6}
+  m_LocalScale: {x: 4.3144026, y: 4.3144026, z: 4.3144026}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4947910548136263178}
@@ -759,6 +760,11 @@ Transform:
   - {fileID: 4053247396279450188}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -65.2, y: -3}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4723097244929075523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,6 +785,43 @@ MonoBehaviour:
   - {fileID: 5423598774945310813}
   notCustomBodyParts:
   - {fileID: 8850253851693337628}
+--- !u!114 &2699855665973698870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6592344474972795041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a09c4e4a5a471448a68be373388e2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScript: {fileID: 0}
+  bodyPartScript: {fileID: 0}
+--- !u!223 &476780922730946573
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6592344474972795041}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 114250447
+  m_SortingOrder: 10000
+  m_TargetDisplay: 0
 --- !u!1 &7587299173572299050
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4053247396279450188}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +863,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1036862429997636724}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Facial Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +895,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1975121284594534149}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,7 +927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4947910548136263178}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}

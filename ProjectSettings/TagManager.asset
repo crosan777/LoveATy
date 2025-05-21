@@ -64,5 +64,8 @@ TagManager:
   - name: HUD
     uniqueID: 114250447
     locked: 0
+  - name: player
+    uniqueID: 164331381
+    locked: 0
   m_RenderingLayers:
   - Default

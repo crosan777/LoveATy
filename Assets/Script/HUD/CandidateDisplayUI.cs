@@ -4,7 +4,7 @@ using TMPro;
 
 public class CandidateDisplayUI : MonoBehaviour
 {
-    public Image portraitImage = PortraitGenerator;
+    public PortraitGenerator portraitGenerator;
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI AgeNumber;
@@ -55,12 +55,12 @@ public class CandidateDisplayUI : MonoBehaviour
 
     public void DisplayCandidate(Character candidate)
     {
+        portraitGenerator.RandomPlayerSprites();
 
-        portraitImage.sprite = candidate.PortraitSprite;
 
         nameText.text = $"{candidate.Name} {candidate.Surname} {candidate.Surname2}";
-        AgeNumber.text = $"Edad: {candidate.Age}";
-        genderText.text = $"G�nero: {candidate.Gender}";
+        AgeNumber.text = $"{candidate.Age} años";
+        genderText.text = $"{candidate.Gender}";
 
 
         //activityText.text = $"Actividad: {candidate.Activity}";
