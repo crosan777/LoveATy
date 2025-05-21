@@ -4,8 +4,10 @@ using UnityEngine.UI;
 
 public class BachelorDisplay : MonoBehaviour
 {
-    public CharacterInfo CurrentCharacterInfo;
-
+    
+    
+    public int index;
+    public CharacterInfo[] CurrentCharacterInfo;
     public Image BachelorPortrait;
     public TMP_Text BachelorName;
     public TMP_Text BachelorAge;
@@ -17,10 +19,15 @@ public class BachelorDisplay : MonoBehaviour
     }
     public void DisplayBachelorInformation()
     {
-        BachelorPortrait.sprite = CurrentCharacterInfo.image;
-        BachelorName.text = CurrentCharacterInfo.name;
-        BachelorDescription.text = CurrentCharacterInfo.Description;
-        BachelorAge.text = CurrentCharacterInfo.Age.ToString();
+        BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
+        BachelorName.text = CurrentCharacterInfo[index].name;
+        BachelorDescription.text = CurrentCharacterInfo[index].Description;
+        BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
     }
-
+    public void RightArrow()
+    {
+        index = (index + 1)%CurrentCharacterInfo.Length; //Formula to make the index be in the List length always
+        DisplayBachelorInformation();
+    }
 }
+

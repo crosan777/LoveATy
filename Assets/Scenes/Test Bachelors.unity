@@ -452,7 +452,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 265097724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1986828272}
+        m_TargetAssemblyTypeName: BachelorDisplay, Assembly-CSharp
+        m_MethodName: RightArrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &265097724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1759,7 +1771,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44df619b851eec141a0fecc33ad00173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentCharacterInfo: {fileID: 11400000, guid: 845d337d89dd8c840b08d72b4d3b5287, type: 2}
+  index: 0
+  CurrentCharacterInfo:
+  - {fileID: 11400000, guid: 845d337d89dd8c840b08d72b4d3b5287, type: 2}
+  - {fileID: 11400000, guid: 536c084c3872b3143b35969bb000019c, type: 2}
+  - {fileID: 11400000, guid: 74b9a4a06594c2043977372f3cf9a99d, type: 2}
   BachelorPortrait: {fileID: 648081}
   BachelorName: {fileID: 2055578419}
   BachelorAge: {fileID: 1850801988}
