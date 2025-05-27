@@ -352,11 +352,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 263.5
     height: 483.5
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 15}
+=======
+    width: 290.4
+    height: 424
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
+  m_ActualView: {fileID: 13}
+>>>>>>> parent of 59ab760 (Deleted some data)
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -379,6 +387,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     x: 263.5
     y: 0
+<<<<<<< HEAD
     width: 771.5
     height: 483.5
 =======
@@ -390,6 +399,13 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 16}
+=======
+    width: 884
+    height: 424
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
+  m_ActualView: {fileID: 14}
+>>>>>>> parent of 59ab760 (Deleted some data)
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -465,11 +481,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 405
     height: 380
   m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 19}
+=======
+    width: 361.59998
+    height: 716.8
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
+  m_ActualView: {fileID: 17}
+>>>>>>> parent of 59ab760 (Deleted some data)
   m_Panes:
   - {fileID: 19}
   m_Selected: 0
@@ -749,8 +773,16 @@ MonoBehaviour:
       width: 960.00006
       height: 698.6139
     m_MinimalGUI: 1
+<<<<<<< HEAD
   m_defaultScale: 0.42083332
   m_LastWindowPixelSize: {x: 404, y: 315}
+=======
+  m_defaultScale: 0.4363426
+  m_LastWindowPixelSize: {x: 882, y: 398}
+<<<<<<< HEAD
+>>>>>>> parent of 59ab760 (Deleted some data)
+=======
+>>>>>>> parent of 59ab760 (Deleted some data)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -818,6 +850,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       m_SelectedIDs: 
       m_LastClickedID: 0
@@ -827,6 +861,16 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: fe6fffff9471ffff2a940000329400004a9400005a94000066940000
 >>>>>>> Stashed changes
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0afbffff62780000687800009c780000a4780000ce780000da780000
+>>>>>>> parent of 59ab760 (Deleted some data)
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0afbffff62780000687800009c780000a4780000ce780000da780000
+>>>>>>> parent of 59ab760 (Deleted some data)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1611,7 +1655,15 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
+<<<<<<< HEAD
     - Assets
+=======
+    - Assets/Characters Object
+>>>>>>> parent of 59ab760 (Deleted some data)
+=======
+    - Assets/Characters Object
+>>>>>>> parent of 59ab760 (Deleted some data)
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1621,6 +1673,8 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
+<<<<<<< HEAD
+<<<<<<< HEAD
   - Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: /Users/cris/Documents/GitHub/LoveATy
@@ -1631,6 +1685,23 @@ MonoBehaviour:
     m_SelectedIDs: 9c7a0000
     m_LastClickedID: 31388
     m_ExpandedIDs: 00000000be7b0000
+=======
+=======
+>>>>>>> parent of 59ab760 (Deleted some data)
+  - Assets/Characters Object
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\LoveATy
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: b2790000
+    m_LastClickedID: 31154
+    m_ExpandedIDs: 000000006079000062790000
+<<<<<<< HEAD
+>>>>>>> parent of 59ab760 (Deleted some data)
+=======
+>>>>>>> parent of 59ab760 (Deleted some data)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1659,7 +1730,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000be7b0000
+=======
+    m_ExpandedIDs: 000000006079000062790000
+>>>>>>> parent of 59ab760 (Deleted some data)
+=======
+    m_ExpandedIDs: 000000006079000062790000
+>>>>>>> parent of 59ab760 (Deleted some data)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
