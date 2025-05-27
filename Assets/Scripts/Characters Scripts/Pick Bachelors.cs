@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PickBachelors : MonoBehaviour
 {
-    List<CharacterInfo> Bachelors = CharacterInfo[];
-    Bachelors = CharacterInfo[]; 
+    /*List<CharacterInfo> Bachelors = CharacterInfo[];
+    Bachelors = CharacterInfo[]; */
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
