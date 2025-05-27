@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1260
     height: 750
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 107
+  controlID: 95
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 296.5
     height: 694
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -300,9 +300,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 238.5
+    x: 254
     y: 78
-    width: 723
+    width: 707.5
     height: 384.5
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -359,23 +359,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 723
+      width: 707.5
       height: 363.5
     m_Scale: {x: 0.67314816, y: 0.67314816}
-    m_Translation: {x: 361.5, y: 181.75}
+    m_Translation: {x: 353.75, y: 181.75}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -537.0289
+      x: -525.5158
       y: -270
-      width: 1074.0577
+      width: 1051.0316
       height: 540
     m_MinimalGUI: 1
   m_defaultScale: 0.67314816
-  m_LastWindowPixelSize: {x: 1446, y: 769}
+  m_LastWindowPixelSize: {x: 1415, y: 769}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -421,9 +421,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 38d2ffffb8f3ffff7cf5ffff16f6ffff5ef6ffff9ef6ffff70f7ffffe8f7ffff40f8ffff00f9ffff54faffff527b0000907d0000
+      m_SelectedIDs: 30c4ffff
+      m_LastClickedID: -15312
+      m_ExpandedIDs: b0dbffff28dcffffbee1ffffbee2fffff2e3ffff1ae6ffff64e6ffffa4e6ffffe6e6ffff26e7ffffd6e8ffff0afbffff6878000080780000cc800000f8810000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1041,9 +1041,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 1.2304432, y: -0.69071895, z: 142.01588}
+    m_Target: {x: 2.7040114, y: -1.8012213, z: 90}
     speed: 2
-    m_Value: {x: 1.2304432, y: -0.69071895, z: 142.01588}
+    m_Value: {x: 2.7040114, y: -1.8012213, z: 90}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1093,9 +1093,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.8071785
+    m_Target: 5.999259
     speed: 2
-    m_Value: 6.0808153
+    m_Value: 5.999259
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1176,7 +1176,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Decoration
+    - Assets/Scripts/Timer
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1186,16 +1186,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/Decoration
+  - Assets/Scripts/Timer
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\vidal\Documents\GitHub\LoveATy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 3.500061}
-    m_SelectedIDs: a07d0000
-    m_LastClickedID: 32160
-    m_ExpandedIDs: 00000000027900006079000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 2.5}
+    m_SelectedIDs: 3e820000
+    m_LastClickedID: 33342
+    m_ExpandedIDs: 00000000f4780000507900005279000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1224,7 +1224,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000002790000
+    m_ExpandedIDs: 00000000f4780000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1256,18 +1256,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000000000006e7e000078790000dc780000ae8800003a8c00003c8c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: AdvanceTime
+      m_OriginalName: AdvanceTime
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 33386
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
