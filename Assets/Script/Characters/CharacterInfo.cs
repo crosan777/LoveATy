@@ -33,4 +33,9 @@ public class Character : MonoBehaviour
 
 
     #endregion
+
+    public bool IsCompatible(Character Candidate)
+    {
+        return Age == Candidate.Age;
+    }
 }
