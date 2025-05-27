@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f75c7b4b3e4a3f04bab1c93e4f733914, type: 3}
-  m_Name: Laia
+  m_Name: Ch_Laia Campos Carillo
   m_EditorClassIdentifier: 
   image: {fileID: -4648495762645734255, guid: 86f900db0a092e4439876af15d7e97b8, type: 3}
   Name: Laia
