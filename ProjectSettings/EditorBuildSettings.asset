@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CharacterSelectScene 1.unity
     guid: ffa3f21e571672442993784010185f06
   - enabled: 1
-    path: Assets/Scenes/Test.unity
+    path: Assets/Scenes/Test Bachelors.unity
     guid: 4827bbf6fb3957a489dff26693161d43
   - enabled: 1
     path: Assets/Scenes/InGame.unity
