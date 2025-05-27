@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f75c7b4b3e4a3f04bab1c93e4f733914, type: 3}
-  m_Name: "Ariadna Roig\xE9 Bazo"
+  m_Name: "Ch_Ariadna Roig\xE9 Bazo"
   m_EditorClassIdentifier: 
   image: {fileID: 1370624195929071563, guid: ae98dde501eb07d45b078934f40e8bb1, type: 3}
   Name: "Ariadna Roig\xE9 Bazo"
