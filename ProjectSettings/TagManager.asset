@@ -61,8 +61,11 @@ TagManager:
   - name: Face
     uniqueID: 3049652463
     locked: 0
-  - name: HUD
+  - name: Setting
     uniqueID: 114250447
+    locked: 0
+  - name: HUD
+    uniqueID: 2056733377
     locked: 0
   m_RenderingLayers:
   - Default
