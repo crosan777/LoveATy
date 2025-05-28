@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LOVEATY backgroun_0: 9038663630486733176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
