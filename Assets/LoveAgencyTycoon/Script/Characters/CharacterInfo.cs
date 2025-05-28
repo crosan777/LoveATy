@@ -1,20 +1,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ActivityType { Activo, Tranquilo } 
+
+
+public enum ActivityType { Activo, Tranquilo }
 public enum MethodologyType { Despreocupado, Espontaneo, Metodico }
 public enum SocialType { Extrovertido, Introvertido, Neutral }
-public enum TraditionType { Clasico , Moderno }
+public enum TraditionType { Clasico, Moderno }
 public enum RelationshipType { Romantico, Picante, Evitativo }
 
 public enum GenderType { Male, Female }
 
-public class Character : MonoBehaviour
+
+[CreateAssetMenu(fileName = "NewCharacterInfo", menuName = "Love Agency/Character")]
+public class CharacterInfo : ScriptableObject
 {
     #region Atributes
-    public Sprite Sprite;
-
-    public string Name { get; set; } 
+    public Sprite image;
+    public string Name;
     public string Surname { get; set; }
     public string Surname2 { get; set; }
 
