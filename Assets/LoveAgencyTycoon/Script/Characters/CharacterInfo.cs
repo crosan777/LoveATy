@@ -12,7 +12,7 @@ public enum GenderType { Male, Female }
 public class Character : MonoBehaviour
 {
     #region Atributes
-    public Sprite PortraitSprite;
+    public Sprite Sprite;
 
     public string Name { get; set; } 
     public string Surname { get; set; }

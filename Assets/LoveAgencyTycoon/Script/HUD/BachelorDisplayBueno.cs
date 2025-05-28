@@ -19,7 +19,7 @@ public class BachelorDisplay : MonoBehaviour
     }
     public void DisplayBachelorInformation()
     {
-        BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
+        BachelorPortrait.sprite = CurrentCharacterInfo[index].Sprite;
         BachelorName.text = CurrentCharacterInfo[index].name;
         BachelorDescription.text = CurrentCharacterInfo[index].Description;
         BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
