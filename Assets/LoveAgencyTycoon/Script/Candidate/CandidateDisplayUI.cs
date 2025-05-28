@@ -53,7 +53,7 @@ public class CandidateDisplayUI : MonoBehaviour
     //public enum TraditionType { Clasico, Moderno }
     //public enum RelationshipType { Romantico, Picante, Evitativo }
 
-    public void DisplayCandidate(Character candidate)
+    public void DisplayCandidate(CharacterInfo candidate)
     {
         portraitGenerator.RandomPlayerSprites();
 

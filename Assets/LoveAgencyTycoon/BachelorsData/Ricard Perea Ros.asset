@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75c7b4b3e4a3f04bab1c93e4f733914, type: 3}
+  m_Name: Ricard Perea Ros
+  m_EditorClassIdentifier: 
+  image: {fileID: -311198505533656378, guid: 1dfaa269c6b688a4c88ebad996dc43f2, type: 3}
+  Name: Ricard Perea Ros
+  Description: "Tu pareja quiere apuntarse a bailes de sal\xF3n, t\xFA\u2026  Pienso
+    que me est\xE1 tomando el pelo  Cuando miras la tele\u2026  Miro mi programa
+    y despu\xE9s apago  En una fiesta t\xFA\u2026   Soy el alma de la fiesta  \xBFQu\xE9
+    tipo de juegos prefieres?  Los Videojuegos  Cuando compras una cama, tienes en
+    cuenta\u2026 Lo bien que dormir\xE1s en ella yo y mi pareja"
+  Age: 18
+  Gender: 0
+  Activity: 1
+  Methodology: 2
+  Social: 0
+  Tradition: 1
+  Relationship: 0

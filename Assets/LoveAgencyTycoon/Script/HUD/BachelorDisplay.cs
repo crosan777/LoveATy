@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class BachelorDisplay : MonoBehaviour
 {
-    
-    
     public int index;
     public CharacterInfo[] CurrentCharacterInfo;
     public Image BachelorPortrait;
@@ -19,7 +17,7 @@ public class BachelorDisplay : MonoBehaviour
     }
     public void DisplayBachelorInformation()
     {
-        BachelorPortrait.sprite = CurrentCharacterInfo[index].Sprite;
+        BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
         BachelorName.text = CurrentCharacterInfo[index].name;
         BachelorDescription.text = CurrentCharacterInfo[index].Description;
         BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();

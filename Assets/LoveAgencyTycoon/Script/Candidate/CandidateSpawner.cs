@@ -19,7 +19,7 @@ public class CandidateSpawner : MonoBehaviour
     {
         for (int i = 0; i < numberOfCandidatesToGenerate; i++)
         {
-            Character newCharacter = candidateCreator.GenerateFullRandomCandidate();
+            CharacterInfo newCharacter = candidateCreator.GenerateFullRandomCandidate();
 
             GameObject candidateGO = Instantiate(candidateDisplayPrefab, contentParent);
             CandidateDisplayUI displayUI = candidateGO.GetComponent<CandidateDisplayUI>();

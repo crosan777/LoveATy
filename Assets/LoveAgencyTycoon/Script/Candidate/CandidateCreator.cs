@@ -4,7 +4,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class CandidateCreator
 {
-    public Character RandomCharacter;
+    public CharacterInfo RandomCharacter;
 
     //TRYS
     public PlayerScript playerScript;
@@ -40,7 +40,7 @@ public class CandidateCreator
 
 
 
-    public void FillCharacterAttributesRandomly(ref Character NewCharacter)
+    public void FillCharacterAttributesRandomly(ref CharacterInfo NewCharacter)
     {
         NewCharacter.Gender = (GenderType)Random.Range(0,2);
 
@@ -66,9 +66,9 @@ public class CandidateCreator
         NewCharacter.Relationship = (RelationshipType)Random.Range(0, 3);
     }
 
-    public Character GenerateRandomCharacter()
+    public CharacterInfo GenerateRandomCharacter()
     {
-        RandomCharacter = new Character();
+        RandomCharacter = new CharacterInfo();
         FillCharacterAttributesRandomly(ref RandomCharacter);
         return RandomCharacter;
     }
@@ -88,10 +88,10 @@ public class CandidateCreator
         return sprite;
     }
 
-    public Character GenerateFullRandomCandidate()
+    public CharacterInfo GenerateFullRandomCandidate()
     {
         //instancia de personaje
-        Character candidate = new Character();
+        CharacterInfo candidate = new CharacterInfo();
 
         // atributos 
         FillCharacterAttributesRandomly(ref candidate);
