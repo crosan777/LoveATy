@@ -30,4 +30,3 @@ public class BachelorDisplay : MonoBehaviour
         DisplayBachelorInformation();
     }
 }
-
