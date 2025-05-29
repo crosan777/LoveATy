@@ -27,4 +27,10 @@ public class BachelorDisplay : MonoBehaviour
         index = (index + 1)%CurrentCharacterInfo.Length; //Formula to make the index be in the List length always
         DisplayBachelorInformation();
     }
+
+    //Saber quin es en el matching
+    public CharacterInfo GetCurrentBachelor()
+    {
+        return CurrentCharacterInfo[index];
+    }
 }

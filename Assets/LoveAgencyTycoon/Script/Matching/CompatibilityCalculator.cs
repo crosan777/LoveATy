@@ -3,16 +3,16 @@ using System.Collections;
 
 public class NewMonoBehaviour : MonoBehaviour
 {
-	// Use this for initialization
-	void Start()
-	{
+    public static float CalculateCompatibility(CharacterInfo a, CharacterInfo b)
+    {
+        float total = 0f;
+        total += 1f - Mathf.Abs(a.Social - b.Social) / 100f;
+        total += 1f - Mathf.Abs(a.Metodologia - b.Metodologia) / 100f;
+        total += 1f - Mathf.Abs(a.Romance - b.Romance) / 100f;
+        total += 1f - Mathf.Abs(a.Tradicion - b.Tradicion) / 100f;
+        total += 1f - Mathf.Abs(a.Actividad - b.Actividad) / 100f;
 
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-			
-	}
+        return total / 5f; // compatibilidad entre 0 y 1
+    }
 }
 

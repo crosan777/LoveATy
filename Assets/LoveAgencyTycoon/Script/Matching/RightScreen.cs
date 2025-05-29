@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class RightScreen: MonoBehaviour
 {
-    public BachelorManager bachelorManager; 
-    public MenuSeleccionCandidato menuSeleccion;
-    public CompatibilityCalculator calculator;
+    public BachelorDisplay bachelorDisplay;
+    public SelectCandidateMenu menuSelect;
+    //public CompatibilityCalculator calculator;
 
     public Text bachelorStatsText;
     public Text candidateStatsText;

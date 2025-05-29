@@ -6,8 +6,10 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 
-public class MenuSeleccionPersonaje : MonoBehaviour
+public class SelectCandidateMenu : MonoBehaviour
 {
+    public CharacterInfo selectedCandidate;
+
     private int index;
 
     [SerializeField] private Image imagen;
@@ -58,7 +60,8 @@ public class MenuSeleccionPersonaje : MonoBehaviour
         }
         CambiarPantalla();
     }
-    public void IniciarJuego() {
+    public void IniciarJuego()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+    }
 }

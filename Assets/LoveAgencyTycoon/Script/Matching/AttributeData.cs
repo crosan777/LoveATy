@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using HUD;
 
 public class AttributeData : MonoBehaviour
 {
