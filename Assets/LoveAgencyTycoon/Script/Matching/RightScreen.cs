@@ -1,41 +1,70 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class RightScreen: MonoBehaviour
+public class RightScreen : MonoBehaviour
 {
+
+    //float compatibility = CompatibilityCalculator.Calculate(currentBachelor, selectedCandidate);
+
     public BachelorDisplay bachelorDisplay;
     public SelectCandidateMenu menuSelect;
-    //public CompatibilityCalculator calculator;
 
-    public Text bachelorStatsText;
-    public Text candidateStatsText;
+    public Image bachelorImageUI;
+    public Image candidateImageUI;
     public Image compatibilityWheel;
 
-    public void ShowComparison(CharacterInfo candidate)
+    private CharacterInfo currentBachelor;
+    private CharacterInfo selectedCandidate;
+
+    // boton MATCH
+    public void OnMatchButtonPressed()
     {
-        var bachelor = bachelorManager.GetCurrentBachelor();
+        currentBachelor = bachelorDisplay.GetCurrentBachelor();
+        selectedCandidate = menuSelect.selectedCandidate;
 
-        if (bachelor == null || candidate == null) return;
+        if (currentBachelor == null || selectedCandidate == null) return;
 
-        var bachelorAttr = bachelor.attributes;
-        var candidateAttr = candidate.attributes;
-
-        bachelorStatsText.text = FormatAttributes(bachelorAttr);
-        candidateStatsText.text = FormatAttributes(candidateAttr);
-
-        float compatibility = calculator.CalculateCompatibility(bachelorAttr, candidateAttr);
-        UpdateCompatibilityWheel(compatibility);
+        ShowPortraits();
+        ShowCompatibility();
     }
 
-    private string FormatAttributes(AttributeData attr)
+    private void ShowPortraits()
     {
-        return $"Social: {attr.social}\nMetodología: {attr.metodologia}\nRomance: {attr.romance}\nTradición: {attr.tradicion}\nActividad: {attr.actividad}";
+        bachelorImageUI.sprite = currentBachelor.image;
+        candidateImageUI.sprite = selectedCandidate.image;
     }
 
-    private void UpdateCompatibilityWheel(float value)
+    private void ShowCompatibility()
     {
-        compatibilityWheel.fillAmount = value;
-        compatibilityWheel.color = Color.Lerp(Color.red, Color.green, value);
+        float compatibility = CalculateCompatibility(currentBachelor, selectedCandidate);
+
+        compatibilityWheel.fillAmount = compatibility;
+        compatibilityWheel.color = Color.Lerp(Color.red, Color.green, compatibility);
+        // ahora lo hace instantaneo despues le añadimos alguna animacion
     }
+
+    private float CalculateCompatibility(CharacterInfo a, CharacterInfo b)
+    {
+        int matches = 0;
+
+        if (a.Social == b.Social)
+            matches++;
+
+        if (a.Methodology == b.Methodology)
+            matches++;
+
+        if (a.Relationship == b.Relationship)
+            matches++;
+
+        if (a.Tradition == b.Tradition)
+            matches++;
+
+        if (a.Activity == b.Activity)
+            matches++;
+
+        //para la ruleta 0.0 o 1.0
+        return matches / 5f;
+    }
+
 }
-
