@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75c7b4b3e4a3f04bab1c93e4f733914, type: 3}
+  m_Name: Ariadna Roige
+  m_EditorClassIdentifier: 
+  image: {fileID: 6290399929846451232, guid: ae98dde501eb07d45b078934f40e8bb1, type: 3}
+  Name: "Ariadna Roig\xE8 Bazo "
+  Description: "Vas a perder un tren\u2026  Corro como si fuera una marat\xF3n Sales
+    a pasear, \xBFcu\xE1ndo vuelves? Cuando haya sacado mil fotos y me duelan los
+    pies No encuentras algo en una tienda\u2026  Pregunto a qui\xE9n sea, \xA1no
+    tengo verg\xFCenza! \xBFEn un viaje c\xF3mo te gu\xEDas?  Con una app y muchas
+    stories de Instagram Tu pareja quiere \u201Ccalentar\u201D la relaci\xF3n\u2026 
+    Le organizo una cita sorpresa en un rooftop con luces LED "
+  Age: 20
+  Gender: 1
+  Activity: 0
+  Methodology: 2
+  Social: 0
+  Tradition: 1
+  Relationship: 0

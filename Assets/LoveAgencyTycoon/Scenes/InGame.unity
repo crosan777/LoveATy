@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 981893258}
     m_Modifications:
+    - target: {fileID: 271897844336701758, guid: 542e88aa34b6e4a7fa762872b12e191e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 476780922730946573, guid: 542e88aa34b6e4a7fa762872b12e191e, type: 3}
       propertyPath: m_Camera
       value: 
@@ -222,6 +226,18 @@ PrefabInstance:
     - target: {fileID: 1526447970604236805, guid: 542e88aa34b6e4a7fa762872b12e191e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011140984772787494, guid: 542e88aa34b6e4a7fa762872b12e191e, type: 3}
+      propertyPath: CurrentCharacterInfo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011140984772787494, guid: 542e88aa34b6e4a7fa762872b12e191e, type: 3}
+      propertyPath: 'CurrentCharacterInfo.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1233cc166571eb14c9106e888ee6ebd4, type: 2}
+    - target: {fileID: 5461371666784239590, guid: 542e88aa34b6e4a7fa762872b12e191e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6592344474972795041, guid: 542e88aa34b6e4a7fa762872b12e191e, type: 3}
       propertyPath: m_Name
