@@ -732,7 +732,6 @@ GameObject:
   - component: {fileID: 1526447970604236805}
   - component: {fileID: 4723097244929075523}
   - component: {fileID: 2699855665973698870}
-  - component: {fileID: 476780922730946573}
   m_Layer: 5
   m_Name: PortraitDisplay
   m_TagString: Untagged
@@ -799,29 +798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScript: {fileID: 0}
   bodyPartScript: {fileID: 0}
---- !u!223 &476780922730946573
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6592344474972795041}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 114250447
-  m_SortingOrder: 10000
-  m_TargetDisplay: 0
 --- !u!1 &7587299173572299050
 GameObject:
   m_ObjectHideFlags: 0

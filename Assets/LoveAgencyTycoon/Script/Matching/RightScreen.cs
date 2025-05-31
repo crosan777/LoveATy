@@ -8,11 +8,15 @@ public class RightScreen : MonoBehaviour
     //float compatibility = CompatibilityCalculator.Calculate(currentBachelor, selectedCandidate);
 
     public BachelorDisplay bachelorDisplay;
-    public SelectCandidateMenu menuSelect;
+    //public SelectedCandidate menuSelect;
+    public CandidateDisplayUI candidateDisplay;
+
 
     public Image bachelorImageUI;
     public Image candidateImageUI;
     public Image compatibilityWheel;
+
+
 
     private CharacterInfo currentBachelor;
     private CharacterInfo selectedCandidate;
@@ -21,7 +25,7 @@ public class RightScreen : MonoBehaviour
     public void OnMatchButtonPressed()
     {
         currentBachelor = bachelorDisplay.GetCurrentBachelor();
-        selectedCandidate = menuSelect.selectedCandidate;
+        //selectedCandidate = menuSelect.selectedCandidate;
 
         if (currentBachelor == null || selectedCandidate == null) return;
 
@@ -65,6 +69,14 @@ public class RightScreen : MonoBehaviour
 
         //para la ruleta 0.0 o 1.0
         return matches / 5f;
+    }
+
+
+
+    //Para detetcar el candidate
+    public void SetSelectedCandidate(CharacterInfo candidate)
+    {
+        selectedCandidate = candidate;
     }
 
 }

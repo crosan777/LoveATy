@@ -35,6 +35,26 @@ public class CandidateDisplayUI : MonoBehaviour
 
     private CandidateCreator candidateCreator;
 
+    public CharacterInfo currentCandidate;
+
+    public CharacterInfo GetCurrentCandidate()
+    {
+        return currentCandidate;
+    }
+
+    public void CandidateButtonPressed()
+    {
+        CharacterInfo candidate = GetCurrentCandidate();
+
+        RightScreen rightScreen = FindObjectOfType<RightScreen>();
+        if (rightScreen != null)
+        {
+            rightScreen.SetSelectedCandidate(candidate);
+        }
+    }
+
+
+
     void Start()
     {
         candidateCreator = new CandidateCreator();
