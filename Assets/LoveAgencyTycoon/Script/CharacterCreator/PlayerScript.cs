@@ -8,6 +8,11 @@ public class PlayerScript : MonoBehaviour
     public BodyPartScript[] notCustomBodyParts;
 
 
+    //Variables del jugador
+    public string playerName;
+    public int playerAge;
+
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);

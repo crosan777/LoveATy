@@ -4,9 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChSceneControllerScript : MonoBehaviour
 {
+    public TMP_InputField nameInput;
+    public TMP_InputField ageInput;
+
     public Button randomBtn;
     public Button submitBtn;
     public GameObject bodyPartBtn;
@@ -120,10 +124,24 @@ public class ChSceneControllerScript : MonoBehaviour
         
     }
 
-    
-
     private void SubmitClickedLoadNextScene()
     {
+        string playerName = nameInput.text;
+        string playerAgeText = ageInput.text;
+
+        int playerAge = 0;
+        if (!int.TryParse(playerAgeText, out playerAge))
+        {
+            Debug.LogWarning("Edad no válida");
+            return;
+        }
+
+        Debug.Log("Nombre: " + playerName + " Edad: " + playerAge);
+
+        // PlayerScript 
+        playerScript.playerName = playerName;
+        playerScript.playerAge = playerAge;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

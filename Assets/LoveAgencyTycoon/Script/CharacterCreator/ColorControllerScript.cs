@@ -22,8 +22,6 @@ public class ColorControllerScript : MonoBehaviour
     public ColorControl green;
     public ColorControl blue;
 
-    public Button[] colorButtons;
-
     public Image choiceColorDisplay;
 
     private void Start()

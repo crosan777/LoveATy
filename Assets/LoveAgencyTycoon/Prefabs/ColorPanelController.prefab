@@ -186,7 +186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62.49999, y: -172.4}
+  m_AnchoredPosition: {x: -4.000022, y: -55.000015}
   m_SizeDelta: {x: 256, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2756508937562551251
@@ -383,22 +383,6 @@ MonoBehaviour:
     fill: {fileID: 854293012362727870}
     handle: {fileID: 5471126194886757953}
     rgb: 0
-  colorButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   choiceColorDisplay: {fileID: 0}
 --- !u!1 &1803266229974462130
 GameObject:
@@ -811,7 +795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62.5, y: -122.4}
+  m_AnchoredPosition: {x: -4.0000105, y: -5.000023}
   m_SizeDelta: {x: 256, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7487964750238864825
@@ -1084,7 +1068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62.49999, y: -72.39999}
+  m_AnchoredPosition: {x: -4, y: 45}
   m_SizeDelta: {x: 256, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2372648490100131738
