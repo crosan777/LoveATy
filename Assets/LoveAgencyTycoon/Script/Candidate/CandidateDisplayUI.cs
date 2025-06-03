@@ -49,7 +49,7 @@ public class CandidateDisplayUI : MonoBehaviour
         RightScreen rightScreen = FindObjectOfType<RightScreen>();
         if (rightScreen != null)
         {
-            rightScreen.SetSelectedCandidate(candidate);
+            rightScreen.SelectedCandidate(candidate);
         }
     }
 
@@ -63,7 +63,8 @@ public class CandidateDisplayUI : MonoBehaviour
 
     public void ChangeCandidate()
     {
-        DisplayCandidate(candidateCreator.GenerateFullRandomCandidate());
+        currentCandidate = candidateCreator.GenerateFullRandomCandidate();
+        DisplayCandidate(currentCandidate);
     }
 
     //REFF

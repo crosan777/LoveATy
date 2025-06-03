@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d6364399daa41b4585dc63ac0b77f38
+guid: 02708fca5241e4a4093945e54390809c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -759190812991726819
-    second: marc pantalla gran_0
+      213: 7477484526214783507
+    second: TutoRobotIdle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: marc pantalla gran_0
+      name: TutoRobotIdle_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 82
-        width: 701
-        height: 402
+        x: 63
+        y: 0
+        width: 194
+        height: 257
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1b53ea5affc675f0800000000000000
-      internalID: -759190812991726819
+      spriteID: 31223862f8c55c760800000000000000
+      internalID: 7477484526214783507
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      marc pantalla gran_0: -759190812991726819
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
