@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class BachelorDisplay : MonoBehaviour
 {
@@ -10,6 +11,22 @@ public class BachelorDisplay : MonoBehaviour
     public TMP_Text BachelorName;
     public TMP_Text BachelorAge;
     public TMP_Text BachelorDescription;
+    public void RightArrow()
+    {
+        index = (index + 1) % CurrentCharacterInfo.Length; //Formula to make the index be in the List length always
+        Console.WriteLine(index);
+        DisplayBachelorInformation();
+    }
+    public void LeftArrow()
+    {
+        
+        if (index == 0 )
+        {
+            index = CurrentCharacterInfo.Length -1;
+        }
+        else index = (index - 1); 
+        DisplayBachelorInformation();
+    }
 
     public void Start()
     {
@@ -21,16 +38,6 @@ public class BachelorDisplay : MonoBehaviour
         BachelorName.text = CurrentCharacterInfo[index].name;
         BachelorDescription.text = CurrentCharacterInfo[index].Description;
         BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
-    }
-    public void RightArrow()
-    {
-        index = (index + 1)%CurrentCharacterInfo.Length; //Formula to make the index be in the List length always
-        DisplayBachelorInformation();
-    }
-    public void LeftArrow()
-    {
-        index = (index - 1) % CurrentCharacterInfo.Length; //Formula to make the index be in the List length always
-        DisplayBachelorInformation();
     }
     //Saber quin es en el matching
     public CharacterInfo GetCurrentBachelor()
