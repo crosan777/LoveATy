@@ -154,8 +154,8 @@ public class CandidateDisplayUI : MonoBehaviour
 
     }
 
-    void Update()
+    void OnBecomeInvisible()
     {
-        
+        Debug.Log("HOLA");
     }
 }

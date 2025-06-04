@@ -1,19 +1,19 @@
 using UnityEngine;
 using System.Collections;
 
-public class Dialogue : MonoBehaviour
-{
-    private bool buttonClicked;
+//public class Dialogue : MonoBehaviour
+//{
+    //private bool buttonClicked;
 
-    [SerialazeField] private string[] dialogueList;
+    //[SerialazeField] private string[] dialogueList;
 
-    void Update()
-    {
+    //void Update()
+  //  {
         
-    }
+//    }
 
-    private void OnPressedButton()
-    {
-        buttonClicked = true;
-    }
-}
+    //private void OnPressedButton()
+    //{
+     //   buttonClicked = true;
+  //  }
+//}
