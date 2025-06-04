@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75c7b4b3e4a3f04bab1c93e4f733914, type: 3}
+  m_Name: Cristina Ferrer Fusalba
+  m_EditorClassIdentifier: 
+  image: {fileID: -1224063968635440288, guid: 366ff140d1d6a9342bdac0db4c495917, type: 3}
+  Name: Cristina Ferrer Fusalba
+  Description: "Cuando tienes muchas cosas por hacer\u2026 Me lo tomo con calma,
+    con nervios no se consigue nada.  \xBFQu\xE9 haces en un d\xEDa soleado? Me quedo
+    en el sof\xE1 tirada.  \xBFCuando juegas videojuegos prefieres jugar online o
+    sola? Dependiendo de mi estado de \xE1nimo  \xBFCu\xE1ndo quieres ver algo en
+    la televisi\xF3n, que ves? No veo la tele, eso est\xE1 anticuado. Miro alguna
+    serie online.  Cuando conoces a alguien guapo\u2026 le digo algo para flirtear
+    con \xE9l. "
+  Age: 18
+  Gender: 1
+  Activity: 1
+  Methodology: 0
+  Social: 2
+  Tradition: 1
+  Relationship: 1
