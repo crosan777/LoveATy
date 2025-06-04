@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75c7b4b3e4a3f04bab1c93e4f733914, type: 3}
+  m_Name: NewCharacterInfo
+  m_EditorClassIdentifier: 
+  image: {fileID: 0}
+  Name: Laia Campos Carrillo
+  Description: "Te invitan a un partido entre amigos\u2026  Voy si me apetece, pero
+    igual me quedo mirando Con muebles del IKEA t\xFA\u2026  Improviso, y si sobra
+    una pieza... pues decoraci\xF3n En clase te sientas\u2026  Al fondo, observando
+    \xBFC\xF3mo limpias los platos?  Con m\xFAsica de fondo, cantando mal \xBFQu\xE9
+    regalar\xEDas por San Valent\xEDn?  Un dibujo o una playlist hecha a mano"
+  Age: 20
+  Gender: 1
+  Activity: 1
+  Methodology: 1
+  Social: 1
+  Tradition: 1
+  Relationship: 0
