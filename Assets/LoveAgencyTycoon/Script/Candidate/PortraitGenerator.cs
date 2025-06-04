@@ -4,6 +4,8 @@ public class PortraitGenerator : MonoBehaviour
 {
     public PlayerScript playerScript;
     public BodyPartScript bodyPartScript;
+    public Transform UpperLimit;
+    public Transform LowerLimit;
 
     private string[] bodyPartNames;
     private int partIndex = 0;
@@ -35,6 +37,24 @@ public class PortraitGenerator : MonoBehaviour
             part.GetComponent<BodyPartScript>().UpdateSpriteColor(newColor);
         }
 
+    }
+
+    void Update()
+    {
+        if(transform.position.y > UpperLimit.position.y || transform.position.y < LowerLimit.position.y)
+        {
+            for(int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).gameObject.SetActive(false);
+            }
+        }
+        else if(transform.position.y < UpperLimit.position.y || transform.position.y > LowerLimit.position.y)
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).gameObject.SetActive(true);
+            }
+        }
     }
 
 }

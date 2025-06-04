@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e180d5e3cb26134482784eb9f646410
+guid: 4fc8c16fd3d0540c88f600c020061a07
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,10 +103,10 @@ TextureImporter:
       name: LOVEATY backgroun_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 470
         y: 2
-        width: 1536
-        height: 1022
+        width: 291
+        height: 389
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 1, y: 0, z: 0, w: 0}
