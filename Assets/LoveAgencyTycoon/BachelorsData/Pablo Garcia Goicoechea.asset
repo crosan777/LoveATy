@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: -2322300061363258381, guid: 3020b2218af5f794dade7540263ef2f8, type: 3}
   Name: Pablo Garcia Goicoechea
-  Description: "Vas a perder un tren\u2026 Depende del d\xEDa corro o me espero a
-    otro  Sales a pasear, \xBFcu\xE1ndo vuelves? Cuando me canse supongo  No encuentras
-    algo en una tienda\u2026 No voy a preguntar, seguir\xE9 buscando  \xBFEn un viaje
-    c\xF3mo te gu\xEDas? Con un mapa o alg\xFAn folleto  Tu pareja quiere \u201Ccalentar\u201D
-    la relaci\xF3n\u2026 Le hago un rico plato de curry caliente. "
+  Description: "- Vas a perder un tren\u2026 \nDepende del d\xEDa corro o me espero
+    a otro  \n\n- Sales a pasear, \xBFcu\xE1ndo vuelves?\n Cuando me canse supongo 
+    \n\n- No encuentras algo en una tienda\u2026\nNo voy a preguntar, seguir\xE9
+    buscando  \n\n- \xBFEn un viaje c\xF3mo te gu\xEDas? \nCon un mapa o alg\xFAn
+    folleto \n\n- Tu pareja quiere \u201Ccalentar\u201D la relaci\xF3n\u2026 \nLe
+    hago un rico plato de curry caliente. "
   Age: 18
   Gender: 0
   Activity: 0

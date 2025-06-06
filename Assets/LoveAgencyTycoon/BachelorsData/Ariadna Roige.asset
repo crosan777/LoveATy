@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 6290399929846451232, guid: ae98dde501eb07d45b078934f40e8bb1, type: 3}
   Name: "Ariadna Roig\xE8 Bazo "
-  Description: "Vas a perder un tren\u2026  Corro como si fuera una marat\xF3n Sales
-    a pasear, \xBFcu\xE1ndo vuelves? Cuando haya sacado mil fotos y me duelan los
-    pies No encuentras algo en una tienda\u2026  Pregunto a qui\xE9n sea, \xA1no
-    tengo verg\xFCenza! \xBFEn un viaje c\xF3mo te gu\xEDas?  Con una app y muchas
-    stories de Instagram Tu pareja quiere \u201Ccalentar\u201D la relaci\xF3n\u2026 
-    Le organizo una cita sorpresa en un rooftop con luces LED "
+  Description: "- Vas a perder un tren\u2026  \nCorro como si fuera una marat\xF3n\n\n-
+    Sales a pasear, \xBFcu\xE1ndo vuelves? \nCuando haya sacado mil fotos y me duelan
+    los pies \n\n- No encuentras algo en una tienda\u2026  \nPregunto a qui\xE9n
+    sea, \xA1no tengo verg\xFCenza! \n\n-\xBFEn un viaje c\xF3mo te gu\xEDas?\n 
+    Con una app y muchas stories de Instagram \n\nTu pareja quiere \u201Ccalentar\u201D
+    la relaci\xF3n\u2026  \nLe organizo una cita sorpresa en un rooftop con luces
+    LED "
   Age: 20
   Gender: 1
   Activity: 0

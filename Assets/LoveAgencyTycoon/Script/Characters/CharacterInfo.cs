@@ -21,6 +21,8 @@ public class CharacterInfo : ScriptableObject
     public string Surname { get; set; }
     public string Surname2 { get; set; }
 
+
+    [TextArea(3, 10)] //para el scroll
     public string Description;
 
     public int Age = 18;

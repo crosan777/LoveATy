@@ -26,8 +26,14 @@ public class RightScreen : MonoBehaviour
     public void SelectedCandidate(CharacterInfo candidate)
     {
         selectedCandidate = candidate;
-        candidateNameText.text = selectedCandidate.Name;
+        candidateNameText.text = $"{selectedCandidate.Name} {selectedCandidate.Surname} {selectedCandidate.Surname2}";
 
+    }
+
+    public void UpdateBachelorName(CharacterInfo bachelor)
+    {
+        currentBachelor = bachelor;
+        bachelorNameText.text = bachelor.Name;
     }
 
 
@@ -47,7 +53,7 @@ public class RightScreen : MonoBehaviour
     private void Name()
     {
         bachelorNameText.text = currentBachelor.Name;
-        candidateNameText.text =  selectedCandidate.Name;
+        candidateNameText.text = $"{selectedCandidate.Name} {selectedCandidate.Surname} {selectedCandidate.Surname2}";
     }
 
 

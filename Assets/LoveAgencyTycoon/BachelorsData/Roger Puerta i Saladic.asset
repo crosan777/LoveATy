@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 9181281698945531941, guid: 329c7e683a56d814aa0e57fe54bfcab1, type: 3}
   Name: Roger Puerta i Saladic
-  Description: "Te invitan a un partido entre amigos\u2026 Juego d\xE1ndolo todo 
-    Con muebles del IKEA t\xFA\u2026 Leo las instrucciones y repito al pie de la
-    letra  En clase te sientas\u2026 Al frente y participo  \xBFC\xF3mo limpias los
-    platos? A mano  \xBFQu\xE9 regalar\xEDas por San Valent\xEDn? Nada. "
-  Age: 18
+  Description: "- Te invitan a un partido entre amigos\u2026 \nJuego d\xE1ndolo todo
+    \n\n-  Con muebles del IKEA t\xFA\u2026 \nLeo las instrucciones y repito al pie
+    de la letra  \n\n- En clase te sientas\u2026 \nAl frente y participo  \n\n- \xBFC\xF3mo
+    limpias los platos? \nA mano  \n\n- \xBFQu\xE9 regalar\xEDas por San Valent\xEDn?\n
+    Nada. "
+  Age: 20
   Gender: 0
   Activity: 0
   Methodology: 2

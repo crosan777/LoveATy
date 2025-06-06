@@ -11,11 +11,30 @@ public class BachelorDisplay : MonoBehaviour
     public TMP_Text BachelorName;
     public TMP_Text BachelorAge;
     public TMP_Text BachelorDescription;
+
+    public RightScreen rightScreen;
+    public void ThirdScreenBachelorDisplay()
+    {
+        BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
+        BachelorName.text = CurrentCharacterInfo[index].Name;
+        BachelorDescription.text = CurrentCharacterInfo[index].Description;
+        BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
+
+        //informa a RightScreen
+        if (rightScreen != null)
+        {
+            rightScreen.UpdateBachelorName(CurrentCharacterInfo[index]);
+        }
+    }
+
+
     public void RightArrow()
     {
         index = (index + 1) % CurrentCharacterInfo.Length; //Formula to make the index be in the List length always
         Console.WriteLine(index);
         DisplayBachelorInformation();
+
+        ThirdScreenBachelorDisplay();
     }
     public void LeftArrow()
     {
@@ -26,6 +45,8 @@ public class BachelorDisplay : MonoBehaviour
         }
         else index = (index - 1); 
         DisplayBachelorInformation();
+
+        ThirdScreenBachelorDisplay();
     }
 
     public void Start()

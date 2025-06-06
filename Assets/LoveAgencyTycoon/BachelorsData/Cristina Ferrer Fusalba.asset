@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: -1224063968635440288, guid: 366ff140d1d6a9342bdac0db4c495917, type: 3}
   Name: Cristina Ferrer Fusalba
-  Description: "Cuando tienes muchas cosas por hacer\u2026 Me lo tomo con calma,
-    con nervios no se consigue nada.  \xBFQu\xE9 haces en un d\xEDa soleado? Me quedo
-    en el sof\xE1 tirada.  \xBFCuando juegas videojuegos prefieres jugar online o
-    sola? Dependiendo de mi estado de \xE1nimo  \xBFCu\xE1ndo quieres ver algo en
-    la televisi\xF3n, que ves? No veo la tele, eso est\xE1 anticuado. Miro alguna
-    serie online.  Cuando conoces a alguien guapo\u2026 le digo algo para flirtear
-    con \xE9l. "
-  Age: 18
+  Description: "- Cuando tienes muchas cosas por hacer\u2026 \nMe lo tomo con calma,
+    con nervios no se consigue nada.  \n\n- \xBFQu\xE9 haces en un d\xEDa soleado?\n
+    Me quedo en el sof\xE1 tirada.  \n\n- \xBFCuando juegas videojuegos prefieres
+    jugar online o sola? \nDependiendo de mi estado de \xE1nimo  \n\n- \xBFCu\xE1ndo
+    quieres ver algo en la televisi\xF3n, que ves? \nNo veo la tele, eso est\xE1
+    anticuado. Miro alguna serie online.  \n\n- Cuando conoces a alguien guapo\u2026
+    \nLe digo algo para flirtear con \xE9l. "
+  Age: 20
   Gender: 1
   Activity: 1
   Methodology: 0
