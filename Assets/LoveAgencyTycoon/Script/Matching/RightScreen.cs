@@ -14,9 +14,11 @@ public class RightScreen : MonoBehaviour
 
     public TMP_Text bachelorNameText;
     public TMP_Text candidateNameText;
-    public Image compatibilityWheel;
+    //public Image compatibilityWheel;
 
-
+    public Image greenFill;
+    public Image redFill;
+    public GameObject inactiveWheel;
 
     private CharacterInfo currentBachelor;
     private CharacterInfo selectedCandidate;
@@ -34,6 +36,15 @@ public class RightScreen : MonoBehaviour
     {
         currentBachelor = bachelor;
         bachelorNameText.text = bachelor.Name;
+    }
+
+
+
+    void Start()
+    {
+        inactiveWheel.SetActive(true);
+        greenFill.fillAmount = 0f;
+        redFill.fillAmount = 0f;
     }
 
 
@@ -61,8 +72,13 @@ public class RightScreen : MonoBehaviour
     {
         float compatibility = CalculateCompatsibility(currentBachelor, selectedCandidate);
 
-        compatibilityWheel.fillAmount = compatibility;
-        compatibilityWheel.color = Color.Lerp(Color.red, Color.green, compatibility);
+        Debug.Log("CompatibilityDisplay called. Compatibility: " + compatibility);
+
+        inactiveWheel.SetActive(false);
+
+        greenFill.fillAmount = compatibility;
+        redFill.fillAmount = 1f;
+
         // ahora lo hace instantaneo despues le añadimos alguna animacion
     }
 
