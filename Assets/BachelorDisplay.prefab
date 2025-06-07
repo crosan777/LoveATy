@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2673533480340024071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,6 +1092,7 @@ MonoBehaviour:
   BachelorName: {fileID: 2564000839044290090}
   BachelorAge: {fileID: 2273926121745926263}
   BachelorDescription: {fileID: 5515388438562899252}
+  rightScreen: {fileID: 0}
 --- !u!1 &6717720089351995968
 GameObject:
   m_ObjectHideFlags: 0
