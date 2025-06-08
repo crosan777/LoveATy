@@ -27,9 +27,9 @@ public class RightScreen : MonoBehaviour
     private CharacterInfo selectedCandidate;
 
     public TMP_Text matchCounterText;
+    private int successfulMatches = 0;
 
     public RectTransform arrowTransform;
-    private int successfulMatches = 0;
     public Image failureScreen;
     public GameObject confettiEffect;
 
@@ -85,6 +85,18 @@ public class RightScreen : MonoBehaviour
         candidateNameText.text = $"{selectedCandidate.Name} {selectedCandidate.Surname} {selectedCandidate.Surname2}";
     }
 
+    private void CompatibilityDisplay()
+    {
+        float compatibility = CalculateCompatsibility(currentBachelor, selectedCandidate);
+
+        inactiveWheel.SetActive(false);
+
+
+        greenFill.fillAmount = compatibility;
+        redFill.fillAmount = 1f;
+
+        SpinArrow(compatibility);
+    }
 
     private IEnumerator SpinAndDecide(float targetAngle, float greenChance, float duration)
     {
@@ -105,7 +117,6 @@ public class RightScreen : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-        //me voy a matar
 
         float arrowZ = arrowTransform.eulerAngles.z;
         float normalizedArrowAngle = (arrowZ + 360f) % 360f;
@@ -136,23 +147,11 @@ public class RightScreen : MonoBehaviour
         else
         {
             StartCoroutine(FlashFailure());
+
         }
     }
 
 
-
-    private void CompatibilityDisplay()
-    {
-        float compatibility = CalculateCompatsibility(currentBachelor, selectedCandidate);
-
-        inactiveWheel.SetActive(false);
-
-
-        greenFill.fillAmount = compatibility;
-        redFill.fillAmount = 1f;
-
-        SpinArrow(compatibility);
-    }
 
 
 
@@ -184,7 +183,7 @@ public class RightScreen : MonoBehaviour
     public void SpinArrow(float greenChance)
     {
         float randomAngle = Random.Range(0f, 360f);
-        float duration = 3f;
+        float duration = 3f;// 3 vueltas
         StartCoroutine(SpinAndDecide(randomAngle, greenChance, duration));
     }
 
