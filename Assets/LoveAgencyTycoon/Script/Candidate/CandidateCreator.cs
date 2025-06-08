@@ -68,7 +68,7 @@ public class CandidateCreator
 
     public CharacterInfo GenerateRandomCharacter()
     {
-        RandomCharacter = new CharacterInfo();
+        RandomCharacter = ScriptableObject.CreateInstance<CharacterInfo>();
         FillCharacterAttributesRandomly(ref RandomCharacter);
         return RandomCharacter;
     }
@@ -91,7 +91,7 @@ public class CandidateCreator
     public CharacterInfo GenerateFullRandomCandidate()
     {
         //instancia de personaje
-        CharacterInfo candidate = new CharacterInfo();
+        CharacterInfo candidate = ScriptableObject.CreateInstance<CharacterInfo>();
 
         // atributos 
         FillCharacterAttributesRandomly(ref candidate);
@@ -103,7 +103,6 @@ public class CandidateCreator
         // retrato 
         ///candidate.PortraitSprite = CapturePortraitFromCamera(portraitCamera);
 
-        // 5. guardar referencia 
         RandomCharacter = candidate;
 
         return candidate;

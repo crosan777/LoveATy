@@ -15,8 +15,8 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
-       
+        GameObject rootObject = gameObject.transform.root.gameObject;
+        DontDestroyOnLoad(rootObject);
     }
 
 

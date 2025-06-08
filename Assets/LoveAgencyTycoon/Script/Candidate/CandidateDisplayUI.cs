@@ -46,7 +46,7 @@ public class CandidateDisplayUI : MonoBehaviour
     {
         CharacterInfo candidate = GetCurrentCandidate();
 
-        RightScreen rightScreen = FindObjectOfType<RightScreen>();
+        RightScreen rightScreen = Object.FindFirstObjectByType<RightScreen>();
         if (rightScreen != null)
         {
             rightScreen.SelectedCandidate(candidate);

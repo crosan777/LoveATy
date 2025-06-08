@@ -14,14 +14,41 @@ public class BachelorDisplay : MonoBehaviour
     public TMP_Text BachelorDescription;
 
     public RightScreen rightScreen;
+
+    public void DisplayBachelorInformation()
+    {
+        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0 || index < 0 || index >= CurrentCharacterInfo.Length)
+        {
+            Debug.LogWarning("CurrentCharacterInfo array inválido o índice fuera de rango.");
+            return;
+        }
+
+        var character = CurrentCharacterInfo[index];
+        if (character == null)
+        {
+            Debug.LogError("CharacterInfo en índice " + index + " es null");
+            return;
+        }
+        if (BachelorPortrait == null) Debug.LogError("BachelorPortrait no está asignado");
+        if (BachelorName == null) Debug.LogError("BachelorName no está asignado");
+        if (BachelorDescription == null) Debug.LogError("BachelorDescription no está asignado");
+        if (BachelorAge == null) Debug.LogError("BachelorAge no está asignado");
+
+        BachelorPortrait.sprite = character.image;
+        BachelorName.text = character.Name;
+        BachelorDescription.text = character.Description;
+        BachelorAge.text = character.Age.ToString();
+    }
+
     public void ThirdScreenBachelorDisplay()
     {
-        BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
-        BachelorName.text = CurrentCharacterInfo[index].Name;
-        BachelorDescription.text = CurrentCharacterInfo[index].Description;
-        BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
+        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0 || index < 0 || index >= CurrentCharacterInfo.Length)
+            return;
 
-        //informa a RightScreen
+      
+        BachelorName.text = CurrentCharacterInfo[index].Name;
+
+
         if (rightScreen != null)
         {
             rightScreen.UpdateBachelorName(CurrentCharacterInfo[index]);
@@ -31,7 +58,9 @@ public class BachelorDisplay : MonoBehaviour
 
     public void RightArrow()
     {
-        index = (index + 1) % CurrentCharacterInfo.Length; //Formula to make the index be in the List length always
+        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0) return;
+
+        index = (index + 1) % CurrentCharacterInfo.Length; 
         Console.WriteLine(index);
         DisplayBachelorInformation();
 
@@ -39,7 +68,8 @@ public class BachelorDisplay : MonoBehaviour
     }
     public void LeftArrow()
     {
-        
+        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0) return;
+
         if (index == 0 )
         {
             index = CurrentCharacterInfo.Length -1;
@@ -53,35 +83,21 @@ public class BachelorDisplay : MonoBehaviour
     public void Start()
     {
         if (CurrentCharacterInfo != null && CurrentCharacterInfo.Length > 0)
+        {
             DisplayBachelorInformation();
-    }
-
-    public void DisplayBachelorInformation()
-    {
-        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0 || index >= CurrentCharacterInfo.Length)
-        {
-            Debug.LogWarning("No bachelor");
-            gameObject.SetActive(false); 
-            return;
-        } //poso aixo per evitar el fokin errores esos
-
-        if (CurrentCharacterInfo[index] == null)
-        {
-            Debug.LogError("No Character");
-            return;
+            ThirdScreenBachelorDisplay(); 
         }
-
-        BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
-        BachelorName.text = CurrentCharacterInfo[index].Name;
-        BachelorDescription.text = CurrentCharacterInfo[index].Description;
-        BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
     }
 
     //Saber quin es en el matching
     public CharacterInfo GetCurrentBachelor()
     {
+        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0 || index < 0 || index >= CurrentCharacterInfo.Length)
+            return null;
+
         return CurrentCharacterInfo[index];
     }
+
     public void RemoveCurrentBachelor()
     {
         if (CurrentCharacterInfo.Length == 0) return;
