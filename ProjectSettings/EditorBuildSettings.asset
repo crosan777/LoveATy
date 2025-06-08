@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/LoveAgencyTycoon/Scenes/Test Bachelors.unity
     guid: 4827bbf6fb3957a489dff26693161d43
   - enabled: 1
-    path: Assets/LoveAgencyTycoon/Scenes/InGame.unity
+    path: Assets/LoveAgencyTycoon/Scenes/Trys.unity
     guid: 04431316ced79bf42a56954b5c50b3a8
   - enabled: 1
     path: Assets/Scenes/CandidateSelector.unity
