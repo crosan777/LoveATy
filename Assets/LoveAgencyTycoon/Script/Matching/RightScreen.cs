@@ -92,14 +92,10 @@ public class RightScreen : MonoBehaviour
 
         Debug.Log("CompatibilityDisplay called. Compatibility: " + compatibility);
 
-        inactiveWheel.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+        inactiveWheel.SetActive(false);
 
-        //greenFill.fillAmount = compatibility;
-        //redFill.fillAmount = 1f - compatibility;  ESTE DEJA UN PEQUEÑO HUEQUITO SI ES MAS DE UNO
-
-        float roundedCompatibility = Mathf.Clamp01(Mathf.Round(compatibility * 1000f) / 1000f);
-        greenFill.fillAmount = roundedCompatibility;
-        redFill.fillAmount = 1f - roundedCompatibility;
+        greenFill.fillAmount = compatibility;
+        redFill.fillAmount = 1f - compatibility;
 
         SpinArrow(compatibility);
         // ahora lo hace instantaneo despues le añadimos alguna animacion
@@ -151,7 +147,7 @@ public class RightScreen : MonoBehaviour
             yield return null;
         }
 
-        float finalAngle = (360f - (endAngle % 360f)) % 360f;
+        float finalAngle = (360f - (endAngle % 360f)) % 360f;  
         bool isGreen = finalAngle <= greenChance * 360f;
 
         if (isGreen)
