@@ -17,12 +17,6 @@ public class BachelorDisplay : MonoBehaviour
 
     public void DisplayBachelorInformation()
     {
-        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0 || index < 0 || index >= CurrentCharacterInfo.Length)
-        {
-            Debug.LogWarning("CurrentCharacterInfo array inválido o índice fuera de rango.");
-            return;
-        }
-
         var character = CurrentCharacterInfo[index];
         if (character == null)
         {
