@@ -147,12 +147,8 @@ public class RightScreen : MonoBehaviour
         else
         {
             StartCoroutine(FlashFailure());
-
         }
     }
-
-
-
 
 
     private float CalculateCompatsibility(CharacterInfo bachelor, CharacterInfo candidate)
@@ -198,6 +194,7 @@ public class RightScreen : MonoBehaviour
     {
         confettiEffect.SetActive(true);
         Invoke("StopConfetti", 2f); //2sec
+
         if (successfulMatches >= 3)
         {
             Win();
