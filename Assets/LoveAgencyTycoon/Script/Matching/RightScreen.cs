@@ -86,20 +86,68 @@ public class RightScreen : MonoBehaviour
     }
 
 
+    private IEnumerator SpinAndDecide(float targetAngle, float greenChance, float duration)
+    {
+        float startAngle = arrowTransform.rotation.eulerAngles.z;
+        float endAngle = targetAngle + 1080f; // 3 vueltas completas
+
+        float time = 0f;
+        while (time < duration)
+        {
+            float angle = Mathf.Lerp(startAngle, endAngle, time / duration);
+            arrowTransform.rotation = Quaternion.Euler(0f, 0f, -angle);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        float finalAngle = (360f - (endAngle % 360f)) % 360f;
+
+        float greenCenter = 90f;
+        float greenRange = greenChance * 360f;
+
+        float greenStart = (greenCenter - greenRange / 2f + 360f) % 360f;
+        float greenEnd = (greenCenter + greenRange / 2f) % 360f;
+
+        bool isGreen;
+
+        if (greenStart < greenEnd)
+        {
+            isGreen = finalAngle >= greenStart && finalAngle <= greenEnd;
+        }
+        else
+        {
+       
+            isGreen = finalAngle >= greenStart || finalAngle <= greenEnd;
+        }
+
+        if (isGreen)
+        {
+            successfulMatches++;
+            UpdateMatchCounter();
+            TriggerSuccessEffect();
+            RemoveMatchedCharacters();
+        }
+        else
+        {
+            StartCoroutine(FlashFailure());
+        }
+    }
+
+
     private void CompatibilityDisplay()
     {
         float compatibility = CalculateCompatsibility(currentBachelor, selectedCandidate);
 
-        Debug.Log("CompatibilityDisplay called. Compatibility: " + compatibility);
-
         inactiveWheel.SetActive(false);
+
 
         greenFill.fillAmount = compatibility;
         redFill.fillAmount = 1f - compatibility;
 
         SpinArrow(compatibility);
-        // ahora lo hace instantaneo despues le añadimos alguna animacion
     }
+
+
 
     private float CalculateCompatsibility(CharacterInfo bachelor, CharacterInfo candidate)
     {
@@ -133,36 +181,7 @@ public class RightScreen : MonoBehaviour
         StartCoroutine(SpinAndDecide(randomAngle, greenChance, duration));
     }
 
-    private IEnumerator SpinAndDecide(float targetAngle, float greenChance, float duration)
-    {
-        float startAngle = arrowTransform.rotation.eulerAngles.z;
-        float endAngle = targetAngle + 1080f; // 3 vueltas 
-
-        float time = 0f;
-        while (time < duration)
-        {
-            float angle = Mathf.Lerp(startAngle, endAngle, time / duration);
-            arrowTransform.rotation = Quaternion.Euler(0f, 0f, -angle);
-            time += Time.deltaTime;
-            yield return null;
-        }
-
-        float finalAngle = (360f - (endAngle % 360f)) % 360f;  
-        bool isGreen = finalAngle <= greenChance * 360f;
-
-        if (isGreen)
-        {
-            successfulMatches++;
-            UpdateMatchCounter();
-            TriggerSuccessEffect();
-            RemoveMatchedCharacters();
-        }
-        else
-        {
-            StartCoroutine(FlashFailure());
-        }
-    }
-
+   
 
     private void RemoveMatchedCharacters()
     {
