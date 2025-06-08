@@ -207,8 +207,7 @@ public class RightScreen : MonoBehaviour
 
     public void Win()
     {
-        ManageScenes manageScenes = new ManageScenes();
-        manageScenes.ChangeSceneUP();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
 

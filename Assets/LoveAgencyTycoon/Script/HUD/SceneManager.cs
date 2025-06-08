@@ -17,6 +17,10 @@ public class ManageScenes : MonoBehaviour
         Debug.Log("No salgas porfi...");
         Application.Quit();
     }
-
+    
+    public void Retry()
+    {
+        SceneManager.LoadScene(2);
+    }
 
 }
