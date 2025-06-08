@@ -52,15 +52,31 @@ public class BachelorDisplay : MonoBehaviour
 
     public void Start()
     {
-        DisplayBachelorInformation();
+        if (CurrentCharacterInfo != null && CurrentCharacterInfo.Length > 0)
+            DisplayBachelorInformation();
     }
+
     public void DisplayBachelorInformation()
     {
+        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0 || index >= CurrentCharacterInfo.Length)
+        {
+            Debug.LogWarning("No bachelor");
+            gameObject.SetActive(false); 
+            return;
+        } //poso aixo per evitar el fokin errores esos
+
+        if (CurrentCharacterInfo[index] == null)
+        {
+            Debug.LogError("No Character");
+            return;
+        }
+
         BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
         BachelorName.text = CurrentCharacterInfo[index].Name;
         BachelorDescription.text = CurrentCharacterInfo[index].Description;
         BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
     }
+
     //Saber quin es en el matching
     public CharacterInfo GetCurrentBachelor()
     {
@@ -69,6 +85,8 @@ public class BachelorDisplay : MonoBehaviour
     public void RemoveCurrentBachelor()
     {
         if (CurrentCharacterInfo.Length == 0) return;
+        if (index >= CurrentCharacterInfo.Length)
+            index = 0;
         var tempList = new List<CharacterInfo>(CurrentCharacterInfo);
         tempList.RemoveAt(index);
         CurrentCharacterInfo = tempList.ToArray();
@@ -76,7 +94,7 @@ public class BachelorDisplay : MonoBehaviour
 
         if (CurrentCharacterInfo.Length == 0)
         {
-            gameObject.SetActive(false); // No quedan más
+            gameObject.SetActive(false); // no mas
             return;
         }
 
