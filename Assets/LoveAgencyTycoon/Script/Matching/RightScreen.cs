@@ -89,7 +89,7 @@ public class RightScreen : MonoBehaviour
     private IEnumerator SpinAndDecide(float targetAngle, float greenChance, float duration)
     {
         float startAngle = arrowTransform.rotation.eulerAngles.z;
-        float endAngle = targetAngle + 1080f; // 3 vueltas completas
+        float endAngle = targetAngle + 1080f; // 3 vueltas 
 
         float time = 0f;
         while (time < duration)
@@ -100,24 +100,23 @@ public class RightScreen : MonoBehaviour
             yield return null;
         }
 
-        float finalAngle = (360f - (endAngle % 360f)) % 360f;
+        float arrowZ = arrowTransform.eulerAngles.z;
+        float normalizedArrowAngle = (arrowZ + 360f) % 360f;
 
         float greenCenter = 90f;
-        float greenRange = greenChance * 360f;
+        float greenAngleRange = greenChance * 360f;
 
-        float greenStart = (greenCenter - greenRange / 2f + 360f) % 360f;
-        float greenEnd = (greenCenter + greenRange / 2f) % 360f;
+        float greenStart = (greenCenter - greenAngleRange / 2f + 360f) % 360f;
+        float greenEnd = (greenCenter + greenAngleRange / 2f) % 360f;
 
         bool isGreen;
-
         if (greenStart < greenEnd)
         {
-            isGreen = finalAngle >= greenStart && finalAngle <= greenEnd;
+            isGreen = normalizedArrowAngle >= greenStart && normalizedArrowAngle <= greenEnd;
         }
         else
         {
-       
-            isGreen = finalAngle >= greenStart || finalAngle <= greenEnd;
+            isGreen = normalizedArrowAngle >= greenStart || normalizedArrowAngle <= greenEnd;
         }
 
         if (isGreen)
@@ -134,6 +133,7 @@ public class RightScreen : MonoBehaviour
     }
 
 
+
     private void CompatibilityDisplay()
     {
         float compatibility = CalculateCompatsibility(currentBachelor, selectedCandidate);
@@ -142,7 +142,7 @@ public class RightScreen : MonoBehaviour
 
 
         greenFill.fillAmount = compatibility;
-        redFill.fillAmount = 1f - compatibility;
+        redFill.fillAmount = 1f;
 
         SpinArrow(compatibility);
     }
