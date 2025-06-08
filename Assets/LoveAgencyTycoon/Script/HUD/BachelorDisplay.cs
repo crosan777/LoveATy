@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using System.Collections.Generic;
 
 public class BachelorDisplay : MonoBehaviour
 {
@@ -64,5 +65,26 @@ public class BachelorDisplay : MonoBehaviour
     public CharacterInfo GetCurrentBachelor()
     {
         return CurrentCharacterInfo[index];
+    }
+    public void RemoveCurrentBachelor()
+    {
+        if (CurrentCharacterInfo.Length == 0) return;
+        var tempList = new List<CharacterInfo>(CurrentCharacterInfo);
+        tempList.RemoveAt(index);
+        CurrentCharacterInfo = tempList.ToArray();
+
+
+        if (CurrentCharacterInfo.Length == 0)
+        {
+            gameObject.SetActive(false); // No quedan más
+            return;
+        }
+
+        if (index >= CurrentCharacterInfo.Length)
+            index = 0;
+
+
+        DisplayBachelorInformation();
+        ThirdScreenBachelorDisplay();
     }
 }

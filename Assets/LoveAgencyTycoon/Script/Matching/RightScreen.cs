@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
+
 
 public class RightScreen : MonoBehaviour
 {
@@ -22,6 +24,15 @@ public class RightScreen : MonoBehaviour
 
     private CharacterInfo currentBachelor;
     private CharacterInfo selectedCandidate;
+
+    public TMP_Text matchCounterText;
+
+    public RectTransform arrowTransform;
+    private int successfulMatches = 0;
+    public Image failureScreen;
+    public GameObject confettiEffect;
+
+
 
 
     //Para detetcar el candidate
@@ -45,6 +56,12 @@ public class RightScreen : MonoBehaviour
         inactiveWheel.SetActive(true);
         greenFill.fillAmount = 0f;
         redFill.fillAmount = 0f;
+
+        if (confettiEffect != null)
+            confettiEffect.SetActive(false);
+
+        if (failureScreen != null)
+            failureScreen.color = new Color(1, 0, 0, 0f);
     }
 
 
@@ -77,8 +94,9 @@ public class RightScreen : MonoBehaviour
         inactiveWheel.SetActive(false);
 
         greenFill.fillAmount = compatibility;
-        redFill.fillAmount = 1f;
+        redFill.fillAmount = 1f - compatibility;
 
+        SpinArrow(compatibility);
         // ahora lo hace instantaneo despues le añadimos alguna animacion
     }
 
@@ -104,4 +122,79 @@ public class RightScreen : MonoBehaviour
         //para la ruleta 0.0 o 1.0
         return matches / 5f;
     }
+
+
+    //FLECHA
+    public void SpinArrow(float greenChance)
+    {
+        float randomAngle = Random.Range(0f, 360f);
+        float duration = 3f;
+        StartCoroutine(SpinAndDecide(randomAngle, greenChance, duration));
+    }
+
+    private IEnumerator SpinAndDecide(float targetAngle, float greenChance, float duration)
+    {
+        float startAngle = arrowTransform.rotation.eulerAngles.z;
+        float endAngle = targetAngle + 1080f; // 3 vueltas 
+
+        float time = 0f;
+        while (time < duration)
+        {
+            float angle = Mathf.Lerp(startAngle, endAngle, time / duration);
+            arrowTransform.rotation = Quaternion.Euler(0f, 0f, -angle);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        float finalAngle = (360f - (endAngle % 360f)) % 360f;  
+        bool isGreen = finalAngle <= greenChance * 360f;
+
+        if (isGreen)
+        {
+            successfulMatches++;
+            UpdateMatchCounter();
+            TriggerSuccessEffect();
+            RemoveMatchedCharacters();
+        }
+        else
+        {
+            StartCoroutine(FlashFailure());
+        }
+    }
+
+
+    private void RemoveMatchedCharacters()
+    {
+        if (candidateDisplay != null)
+            candidateDisplay.gameObject.SetActive(false);
+        if (bachelorDisplay != null)
+            bachelorDisplay.RemoveCurrentBachelor();
+    }
+
+    private void UpdateMatchCounter()
+    {
+        matchCounterText.text = $"Matches: {successfulMatches}";
+    }
+
+
+    private void TriggerSuccessEffect()
+    {
+        confettiEffect.SetActive(true);
+        Invoke("StopConfetti", 2f); //2sec
+    }
+
+    private void StopConfetti()
+    {
+        confettiEffect.SetActive(false);
+    }
+
+    private IEnumerator FlashFailure()
+    {
+        failureScreen.color = new Color(1, 0, 0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        failureScreen.color = new Color(1, 0, 0, 0f);
+    }
+
+
+
 }
