@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 700407415}
   - component: {fileID: 700407414}
   - component: {fileID: 700407413}
+  - component: {fileID: 700407417}
   m_Layer: 5
   m_Name: HUDCanvas
   m_TagString: Untagged
@@ -669,6 +670,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &700407417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700407412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b417df3f86dde4d9c5f8024e038862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &784045450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,13 +1017,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: f49d9f28ba33f804fb343d97f83ed796, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 700407417}
+        m_TargetAssemblyTypeName: SceneManacer, Assembly-CSharp
+        m_MethodName: ChangeSceneUP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

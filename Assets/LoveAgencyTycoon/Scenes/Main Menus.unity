@@ -1356,6 +1356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 583721580}
+  - component: {fileID: 583721581}
   m_Layer: 0
   m_Name: Menu Windows
   m_TagString: Untagged
@@ -1381,6 +1382,18 @@ Transform:
   - {fileID: 1947590085}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &583721581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583721579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b417df3f86dde4d9c5f8024e038862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &629213018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,8 +1867,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1491459781}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: Play
+        m_TargetAssemblyTypeName: SceneManacer, Assembly-CSharp
+        m_MethodName: ChangeSceneUP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2695,6 +2708,7 @@ GameObject:
   - component: {fileID: 1491459779}
   - component: {fileID: 1491459778}
   - component: {fileID: 1491459781}
+  - component: {fileID: 1491459782}
   m_Layer: 0
   m_Name: ' Main Menu'
   m_TagString: Untagged
@@ -2803,6 +2817,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b417df3f86dde4d9c5f8024e038862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &1491459782
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491459776}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1573871547
 GameObject:
   m_ObjectHideFlags: 0

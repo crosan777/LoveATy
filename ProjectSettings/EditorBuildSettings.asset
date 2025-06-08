@@ -12,14 +12,8 @@ EditorBuildSettings:
     path: Assets/LoveAgencyTycoon/Scenes/CharacterSelectScene 1.unity
     guid: ffa3f21e571672442993784010185f06
   - enabled: 1
-    path: Assets/LoveAgencyTycoon/Scenes/Test Bachelors.unity
-    guid: 4827bbf6fb3957a489dff26693161d43
-  - enabled: 1
-    path: Assets/LoveAgencyTycoon/Scenes/Trys.unity
-    guid: 04431316ced79bf42a56954b5c50b3a8
-  - enabled: 1
-    path: Assets/Scenes/CandidateSelector.unity
-    guid: f9fba96902541fb4b8f89e37745cddb1
+    path: Assets/LoveAgencyTycoon/Scenes/InGame Good.unity
+    guid: 0eab8267c98beec4a88bc4d38fd80d33
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ee733f047924edd449e14b156446479b, type: 3}
   m_UseUCBPForAssetBundles: 0

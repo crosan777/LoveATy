@@ -3,9 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneManacer : MonoBehaviour
 {
-    public void Play()
+    public void ChangeSceneDown()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+    }
+    public void ChangeSceneUP()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void ExitGame()
