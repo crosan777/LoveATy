@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/LoveAgencyTycoon/Scenes/CharacterSelectScene 1.unity
     guid: ffa3f21e571672442993784010185f06
   - enabled: 1
-    path: Assets/LoveAgencyTycoon/Scenes/InGame Good.unity
+    path: Assets/LoveAgencyTycoon/Scenes/InGame.unity
     guid: 0eab8267c98beec4a88bc4d38fd80d33
+  - enabled: 1
+    path: Assets/LoveAgencyTycoon/Scenes/Lose Window.unity
+    guid: bb38b442d781cf8478e597f52ad39668
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ee733f047924edd449e14b156446479b, type: 3}
   m_UseUCBPForAssetBundles: 0

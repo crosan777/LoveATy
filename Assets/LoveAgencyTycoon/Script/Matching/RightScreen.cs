@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 
 public class RightScreen : MonoBehaviour
@@ -185,6 +186,11 @@ public class RightScreen : MonoBehaviour
     {
         confettiEffect.SetActive(true);
         Invoke("StopConfetti", 2f); //2sec
+        if (successfulMatches >= 3)
+        {
+            Win();
+        }
+
     }
 
     private void StopConfetti()
@@ -199,6 +205,11 @@ public class RightScreen : MonoBehaviour
         failureScreen.color = new Color(1, 0, 0, 0f);
     }
 
+    public void Win()
+    {
+        ManageScenes manageScenes = new ManageScenes();
+        manageScenes.ChangeSceneUP();
+    }
 
 
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManacer : MonoBehaviour
+public class ManageScenes : MonoBehaviour
 {
     public void ChangeSceneDown()
     {

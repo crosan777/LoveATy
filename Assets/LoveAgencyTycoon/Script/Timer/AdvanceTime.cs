@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AdvanceTime : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class AdvanceTime : MonoBehaviour
     {
         yield return new WaitForSeconds(timeUntilHourChange);
 
-        if (timeHours == 12)
+        if (!Pm && timeHours == 12)
         {
             timeHours = 1;
             Pm = true;
@@ -50,6 +51,11 @@ public class AdvanceTime : MonoBehaviour
             StartCoroutine(routine: advanceHourOverTime());
 
         }
+        if (Pm && timeHours > 8)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
 
 
