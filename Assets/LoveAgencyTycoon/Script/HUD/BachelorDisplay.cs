@@ -52,15 +52,37 @@ public class BachelorDisplay : MonoBehaviour
 
     public void Start()
     {
-        DisplayBachelorInformation();
+        if (CurrentCharacterInfo != null && CurrentCharacterInfo.Length > 0)
+        {
+           
+            Debug.Log("Esperando al click");
+        }
+        else
+        {
+            Debug.LogWarning("No bachelors");
+        }
     }
+
+
     public void DisplayBachelorInformation()
     {
+        if (CurrentCharacterInfo == null || CurrentCharacterInfo.Length == 0)
+        {
+            Debug.LogWarning("No bachelors");
+            return;
+        }
+
+        if (index < 0 || index >= CurrentCharacterInfo.Length)
+        {
+            index = 0; // Sino dona error
+        }
+
         BachelorPortrait.sprite = CurrentCharacterInfo[index].image;
         BachelorName.text = CurrentCharacterInfo[index].Name;
         BachelorDescription.text = CurrentCharacterInfo[index].Description;
         BachelorAge.text = CurrentCharacterInfo[index].Age.ToString();
     }
+
     //Saber quin es en el matching
     public CharacterInfo GetCurrentBachelor()
     {
