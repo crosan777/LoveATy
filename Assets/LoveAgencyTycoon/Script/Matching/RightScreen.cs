@@ -88,8 +88,14 @@ public class RightScreen : MonoBehaviour
 
     private IEnumerator SpinAndDecide(float targetAngle, float greenChance, float duration)
     {
+        if (greenChance <= 0f)
+        {
+            StartCoroutine(FlashFailure());
+            yield break;
+        }
+
         float startAngle = arrowTransform.rotation.eulerAngles.z;
-        float endAngle = targetAngle + 1080f; // 3 vueltas 
+        float endAngle = targetAngle + 1080f;
 
         float time = 0f;
         while (time < duration)
@@ -99,6 +105,7 @@ public class RightScreen : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
+        //me voy a matar
 
         float arrowZ = arrowTransform.eulerAngles.z;
         float normalizedArrowAngle = (arrowZ + 360f) % 360f;
@@ -182,15 +189,6 @@ public class RightScreen : MonoBehaviour
     }
 
    
-
-    private void RemoveMatchedCharacters()
-    {
-        if (candidateDisplay != null)
-            candidateDisplay.gameObject.SetActive(false);
-        if (bachelorDisplay != null)
-            bachelorDisplay.RemoveCurrentBachelor();
-    }
-
     private void UpdateMatchCounter()
     {
         matchCounterText.text = $"Matches: {successfulMatches}";
@@ -218,7 +216,21 @@ public class RightScreen : MonoBehaviour
         failureScreen.color = new Color(1, 0, 0, 0.5f);
         yield return new WaitForSeconds(0.5f);
         failureScreen.color = new Color(1, 0, 0, 0f);
+
     }
+
+    private void RemoveMatchedCharacters()
+    {
+        if (candidateDisplay != null)
+        {
+            candidateDisplay.ChangeCandidate(); 
+            candidateDisplay.gameObject.SetActive(true);
+        }
+
+        if (bachelorDisplay != null)
+            bachelorDisplay.RemoveCurrentBachelor();
+    }
+
 
     public void Win()
     {
