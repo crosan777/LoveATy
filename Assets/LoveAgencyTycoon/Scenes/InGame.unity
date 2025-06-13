@@ -2833,8 +2833,8 @@ MonoBehaviour:
     O el error humano.\n\nAhora s\xED, adelante.\nSelecciona. Analiza. Ejecuta.\nNosotros
     observamos. Siempre."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e633cdbab881cf34bb024e204eeef52e, type: 2}
+  m_sharedMaterial: {fileID: -1623057238514626112, guid: e633cdbab881cf34bb024e204eeef52e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3977,7 +3977,27 @@ MonoBehaviour:
   m_HandleRect: {fileID: 336307195}
   m_Direction: 2
   m_Value: 1
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: 0.055837277
+=======
+  m_Size: 0.07456816
+>>>>>>> parent of 36a408b (ij)
+=======
+  m_Size: 0.07456816
+>>>>>>> parent of 36a408b (ij)
+=======
+  m_Size: 0.07456816
+>>>>>>> parent of 36a408b (ij)
+=======
+  m_Size: 0.07456816
+>>>>>>> parent of 36a408b (ij)
+=======
+  m_Size: 0.07456816
+>>>>>>> parent of 36a408b (ij)
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
