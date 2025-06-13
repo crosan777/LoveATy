@@ -21,16 +21,8 @@ public class BodyPartScript : MonoBehaviour
 
     private void Start()
     {
-        if (sprites.Length > 0)
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].img;
-        }
-        else
-        {
-            Debug.LogWarning($"no sprites en el BodyPartScript.");
-        }
+        gameObject.GetComponent<SpriteRenderer>().sprite = sprites[index].img;
     }
-
 
     public void UpdateSprite(int newIndex)
     {

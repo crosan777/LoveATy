@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using TMPro;
+#if UNITY_EDITOR
 using UnityEditor.UIElements;
+#endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

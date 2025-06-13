@@ -78,10 +78,16 @@ public class BachelorDisplay : MonoBehaviour
     {
         if (CurrentCharacterInfo != null && CurrentCharacterInfo.Length > 0)
         {
+            if (index < 0 || index >= CurrentCharacterInfo.Length)
+            {
+                index = 0;
+            }
+
             DisplayBachelorInformation();
-            ThirdScreenBachelorDisplay(); 
+            ThirdScreenBachelorDisplay();
         }
     }
+
 
     //Saber quin es en el matching
     public CharacterInfo GetCurrentBachelor()
