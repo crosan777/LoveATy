@@ -142,6 +142,7 @@ public class ChSceneControllerScript : MonoBehaviour
         playerScript.playerName = playerName;
         playerScript.playerAge = playerAge;
 
+        Destroy(this.gameObject); 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
